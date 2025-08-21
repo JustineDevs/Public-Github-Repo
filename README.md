@@ -90,6 +90,8 @@ A curated collection of helpful repositories for developers, featuring resources
 | JSON Promptor | JSON prompt generation tool | [Visit](https://jsonpromptor.pages.dev/) |
 | 10015.io | AI-powered development tools | [Visit](https://10015.io/) |
 | DeepSite | AI-powered website analysis tool | [Visit](https://huggingface.co/spaces/enzostvs/deepsite) |
+| GitToDo App | Responsive Kanban board for managing TODO.md files on GitHub with drag-and-drop functionality | [GitHub Marketplace](https://github.com/marketplace/gittodo-app) |
+| GitSearchAI | AI-powered GitHub repository search and discovery tool for finding relevant code and projects | [Visit](https://www.gitsearchai.com/) |
 
 ### Vibe Coding & Claude Agents
 
