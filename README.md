@@ -11,6 +11,12 @@ A curated collection of helpful repositories for developers, featuring resources
 </a>
 <a href="https://github.com/JustineDevs/Public-Github-Repo/network/members">
   <img src="https://img.shields.io/github/forks/JustineDevs/Public-Github-Repo" alt="forks" />
+<a href="https://github.com/JustineDevs?tab=followers">
+  <img src="https://img.shields.io/github/followers/JustineDevs" alt="followers" />
+</a>
+<a href="https://github.com/JustineDevs/Public-Github-Repo">
+  <img src="https://img.shields.io/github/stars/JustineDevs" alt="total stars" />
+</a>
 </a>
 <a href="https://github.com/JustineDevs/Public-Github-Repo/issues">
   <img src="https://img.shields.io/github/issues/JustineDevs/Public-Github-Repo" alt="issues" />
@@ -20,12 +26,6 @@ A curated collection of helpful repositories for developers, featuring resources
 </a>
 <a href="https://github.com/JustineDevs/Public-Github-Repo/commits/main">
   <img src="https://img.shields.io/github/last-commit/JustineDevs/Public-Github-Repo" alt="last commit" />
-</a>
-<a href="https://github.com/JustineDevs?tab=followers">
-  <img src="https://img.shields.io/github/followers/JustineDevs" alt="followers" />
-</a>
-<a href="https://github.com/JustineDevs/Public-Github-Repo">
-  <img src="https://img.shields.io/github/stars/JustineDevs" alt="total stars" />
 </a>
 
 </div>
