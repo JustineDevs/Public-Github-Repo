@@ -2,6 +2,36 @@
 
 A curated collection of helpful repositories for developers, featuring resources on AI, Large Language Models (LLMs), and much more. Your go-to hub for essential tools, libraries, and projects to boost your development journey.
 
+## 📊 Repository Statistics
+
+<a href="https://github.com/JustineDevs/Public-Github-Repo/stargazers">
+  <img src="https://img.shields.io/github/stars/JustineDevs/Public-Github-Repo" alt="stars" />
+</a>
+<a href="https://github.com/JustineDevs/Public-Github-Repo/network/members">
+  <img src="https://img.shields.io/github/forks/JustineDevs/Public-Github-Repo" alt="forks" />
+</a>
+<a href="https://github.com/JustineDevs/Public-Github-Repo/issues">
+  <img src="https://img.shields.io/github/issues/JustineDevs/Public-Github-Repo" alt="issues" />
+</a>
+<a href="https://github.com/JustineDevs/Public-Github-Repo/pulls">
+  <img src="https://img.shields.io/github/issues-pr/JustineDevs/Public-Github-Repo" alt="pull requests" />
+</a>
+<a href="https://github.com/JustineDevs/Public-Github-Repo/commits/main">
+  <img src="https://img.shields.io/github/last-commit/JustineDevs/Public-Github-Repo" alt="last commit" />
+</a>
+
+## 👤 Profile Statistics
+
+<a href="https://github.com/JustineDevs?tab=followers">
+  <img src="https://img.shields.io/github/followers/JustineDevs" alt="followers" />
+</a>
+<a href="https://github.com/JustineDevs">
+  <img src="https://img.shields.io/github/stars/JustineDevs" alt="total stars" />
+</a>
+<a href="https://github.com/JustineDevs">
+  <img src="https://img.shields.io/github/repos/JustineDevs" alt="total repositories" />
+</a>
+
 ## 🚀 Featured Repositories
 
 ### AI & Machine Learning
