@@ -91,12 +91,19 @@ A curated collection of helpful repositories for developers, featuring resources
 | 10015.io | AI-powered development tools | [Visit](https://10015.io/) |
 | DeepSite | AI-powered website analysis tool | [Visit](https://huggingface.co/spaces/enzostvs/deepsite) |
 
+### Vibe Coding
+
+| Repository | Description | Stars | Forks |
+|------------|-------------|-------|-------|
+| [vibe-coding](https://github.com/JustineDevs/vibe-coding) | Creative coding projects and experiments | <a href="https://github.com/JustineDevs/vibe-coding/stargazers"><img src="https://img.shields.io/github/stars/JustineDevs/vibe-coding" alt="stars" /></a> | <a href="https://github.com/JustineDevs/vibe-coding/network/members"><img src="https://img.shields.io/github/forks/JustineDevs/vibe-coding" alt="forks" /></a> |
+
 ## 📚 Categories
 
-- **🤖 AI & Machine Learning**: Core AI models, frameworks, and applications
-- **📖 Learning Resources**: Courses, tutorials, and educational materials
-- **🛠️ Tools & Libraries**: Development utilities and frameworks
-- **🌐 Web Tools**: Online services and web-based applications
+- **AI & Machine Learning**: Core AI models, frameworks, and applications
+- **Learning Resources**: Courses, tutorials, and educational materials
+- **Tools & Libraries**: Development utilities and frameworks
+- **Web Tools**: Online services and web-based applications
+- **Vibe Coding**: Creative coding projects and experiments
 
 ## 🚀 Getting Started
 
