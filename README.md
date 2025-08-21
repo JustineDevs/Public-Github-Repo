@@ -91,11 +91,16 @@ A curated collection of helpful repositories for developers, featuring resources
 | 10015.io | AI-powered development tools | [Visit](https://10015.io/) |
 | DeepSite | AI-powered website analysis tool | [Visit](https://huggingface.co/spaces/enzostvs/deepsite) |
 
-### Vibe Coding
+### Vibe Coding & Claude Agents
 
-| Repository | Description | Stars | Forks |
-|------------|-------------|-------|-------|
-| [vibe-coding](https://github.com/JustineDevs/vibe-coding) | Creative coding projects and experiments | <a href="https://github.com/JustineDevs/vibe-coding/stargazers"><img src="https://img.shields.io/github/stars/JustineDevs/vibe-coding" alt="stars" /></a> | <a href="https://github.com/JustineDevs/vibe-coding/network/members"><img src="https://img.shields.io/github/forks/JustineDevs/vibe-coding" alt="forks" /></a> |
+| Resource | Description | Type |
+|----------|-------------|------|
+| [Claude Agent Examples](vibe%20coding/.claude/agent-examples/) | Collection of Claude AI agent examples and templates | Local Directory |
+| [Vercel AI SDK v5 Expert](vibe%20coding/.claude/agent-examples/vercel-ai-sdk-v5-expert.md) | Expert agent for Vercel AI SDK v5 development | Markdown |
+| [Shadcn UI Expert](vibe%20coding/.claude/agent-examples/shadcn-ui-expert.md) | Expert agent for Shadcn UI component library | Markdown |
+| [Frontend Architecture Expert](vibe%20coding/.claude/agent-examples/shadcn-frontend-architecture.md) | Expert agent for frontend architecture patterns | Markdown |
+| [MCP Expert](vibe%20coding/.claude/agent-examples/overall-mcp-expert.md) | Expert agent for Model Context Protocol | Markdown |
+| [Claude Documentation](vibe%20coding/.claude/claude.md) | Claude AI integration and usage documentation | Markdown |
 
 ## 📚 Categories
 
@@ -103,7 +108,7 @@ A curated collection of helpful repositories for developers, featuring resources
 - **Learning Resources**: Courses, tutorials, and educational materials
 - **Tools & Libraries**: Development utilities and frameworks
 - **Web Tools**: Online services and web-based applications
-- **Vibe Coding**: Creative coding projects and experiments
+- **Vibe Coding & Claude Agents**: Claude AI agent examples and development resources
 
 ## 🚀 Getting Started
 
