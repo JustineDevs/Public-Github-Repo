@@ -14,9 +14,6 @@ A curated collection of helpful repositories for developers, featuring resources
 <a href="https://github.com/JustineDevs?tab=followers">
   <img src="https://img.shields.io/github/followers/JustineDevs" alt="followers" />
 </a>
-<a href="https://github.com/JustineDevs/Public-Github-Repo">
-  <img src="https://img.shields.io/github/stars/JustineDevs" alt="total stars" />
-</a>
 </a>
 <a href="https://github.com/JustineDevs/Public-Github-Repo/issues">
   <img src="https://img.shields.io/github/issues/JustineDevs/Public-Github-Repo" alt="issues" />
