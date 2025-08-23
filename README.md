@@ -51,6 +51,8 @@ A curated collection of helpful repositories for developers, featuring resources
 | [design-studio](https://github.com/Tiledesk/design-studio) | Design collaboration and prototyping tool | <a href="https://github.com/Tiledesk/design-studio/stargazers"><img src="https://img.shields.io/github/stars/Tiledesk/design-studio" alt="stars" /></a> | <a href="https://github.com/Tiledesk/design-studio/network/members"><img src="https://img.shields.io/github/forks/Tiledesk/design-studio" alt="forks" /></a> |
 | [supervision](https://github.com/roboflow/supervision) | Computer vision supervision library | <a href="https://github.com/roboflow/supervision/stargazers"><img src="https://img.shields.io/github/stars/roboflow/supervision" alt="stars" /></a> | <a href="https://github.com/roboflow/supervision/network/members"><img src="https://img.shields.io/github/forks/roboflow/supervision" alt="forks" /></a> |
 | [Qwen-Image](https://github.com/QwenLM/Qwen-Image) | Qwen image understanding model | <a href="https://github.com/QwenLM/Qwen-Image/stargazers"><img src="https://img.shields.io/github/stars/QwenLM/Qwen-Image" alt="stars" /></a> | <a href="https://github.com/QwenLM/Qwen-Image/network/members"><img src="https://img.shields.io/github/forks/QwenLM/Qwen-Image" alt="forks" /></a> |
+| [strands-agents-sdk-python](https://github.com/strands-agents/sdk-python) | Python SDK for building AI agents with Strands framework | <a href="https://github.com/strands-agents/sdk-python/stargazers"><img src="https://img.shields.io/github/stars/strands-agents/sdk-python" alt="stars" /></a> | <a href="https://github.com/strands-agents/sdk-python/network/members"><img src="https://img.shields.io/github/forks/strands-agents/sdk-python" alt="forks" /></a> |
+| [awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps/) | Curated list of awesome LLM applications and resources | <a href="https://github.com/Shubhamsaboo/awesome-llm-apps/stargazers"><img src="https://img.shields.io/github/stars/Shubhamsaboo/awesome-llm-apps" alt="stars" /></a> | <a href="https://github.com/Shubhamsaboo/awesome-llm-apps/network/members"><img src="https://img.shields.io/github/forks/Shubhamsaboo/awesome-llm-apps" alt="forks" /></a> |
 
 ### Learning Resources
 
@@ -92,6 +94,36 @@ A curated collection of helpful repositories for developers, featuring resources
 | DeepSite | AI-powered website analysis tool | [Visit](https://huggingface.co/spaces/enzostvs/deepsite) |
 | GitToDo App | Responsive Kanban board for managing TODO.md files on GitHub with drag-and-drop functionality | [GitHub Marketplace](https://github.com/marketplace/gittodo-app) |
 | GitSearchAI | AI-powered GitHub repository search and discovery tool for finding relevant code and projects | [Visit](https://www.gitsearchai.com/) |
+
+#### AI & Creative Tools
+| Tool | Description | Link |
+|------|-------------|------|
+| TryDora Studio | AI-powered design and creative platform | [Visit](https://trydorastudio.com/) |
+| AnswerThePublic | AI-powered content research and keyword discovery tool | [Visit](https://answerthepublic.com/) |
+| Looka | AI logo and brand design platform | [Visit](https://looka.com/) |
+| Luma AI | AI-powered 3D generation and creative tools | [Visit](https://www.luma.ai/) |
+| Ideogram AI | AI image generation and editing platform | [Visit](https://ideogram.ai/) |
+| LlamaCoder | AI-powered coding assistant by Together AI | [Visit](https://llamacoder.together.ai/) |
+
+#### Audio & Speech Tools
+| Tool | Description | Link |
+|------|-------------|------|
+| Speechma | AI-powered speech recognition and transcription | [Visit](https://speechma.com/) |
+| Fish Audio | AI audio generation and editing platform | [Visit](https://fish.audio/) |
+| ElevenLabs | AI text-to-speech and voice cloning platform | [Visit](https://elevenlabs.io/app) |
+
+#### Development & Design Tools
+| Tool | Description | Link |
+|------|-------------|------|
+| Relume | AI-powered website design and wireframing tool | [Visit](https://www.relume.io/) |
+| Teal HQ | Job search and career management platform | [Visit](https://www.tealhq.com/) |
+| DeepL Translator | AI-powered translation service | [Visit](https://www.deepl.com/en/translator) |
+| Filemail | Large file sharing and transfer service | [Visit](https://www.filemail.com/) |
+
+#### Hosting & Infrastructure
+| Tool | Description | Link |
+|------|-------------|------|
+| InfinityFree | Free web hosting service | [Visit](https://www.infinityfree.com/) |
 
 ### Vibe Coding & Claude Agents
 
