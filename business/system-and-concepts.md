@@ -1,4 +1,4 @@
-#Comprehensive Business Systems & Concepts List
+# Comprehensive Business Systems & Concepts List
 
 - **CRM (Customer Relationship Management):** Manages customer data, sales, marketing, and customer service.
 - **ERP (Enterprise Resource Planning):** Integrates core business processes such as finance, HR, manufacturing, inventory, and procurement into a unified system.
