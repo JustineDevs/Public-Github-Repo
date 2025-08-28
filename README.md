@@ -84,6 +84,9 @@ A curated collection of helpful repositories for developers, featuring resources
 | [browser-use](https://github.com/browser-use/browser-use) | Browser automation and testing tool | <a href="https://github.com/browser-use/browser-use/stargazers"><img src="https://img.shields.io/github/stars/browser-use/browser-use" alt="stars" /></a> | <a href="https://github.com/browser-use/browser-use/network/members"><img src="https://img.shields.io/github/forks/browser-use/browser-use" alt="forks" /></a> |
 | [gitingest](https://github.com/coderamp-labs/gitingest) | Git repository ingestion tool | <a href="https://github.com/coderamp-labs/gitingest/stargazers"><img src="https://img.shields.io/github/stars/coderamp-labs/gitingest" alt="stars" /></a> | <a href="https://github.com/coderamp-labs/gitingest/network/members"><img src="https://img.shields.io/github/forks/coderamp-labs/gitingest" alt="forks" /></a> |
 | [playwright-mcp](https://github.com/microsoft/playwright-mcp) | Microsoft's Playwright MCP server | <a href="https://github.com/microsoft/playwright-mcp/stargazers"><img src="https://img.shields.io/github/stars/microsoft/playwright-mcp" alt="stars" /></a> | <a href="https://github.com/microsoft/playwright-mcp/network/members"><img src="https://img.shields.io/github/forks/microsoft/playwright-mcp" alt="forks" /></a> |
+| [redesigned-octo-barnacle](https://github.com/shabbirun/redesigned-octo-barnacle) | Redesigned project template with modern architecture | <a href="https://github.com/shabbirun/redesigned-octo-barnacle/stargazers"><img src="https://img.shields.io/github/stars/shabbirun/redesigned-octo-barnacle" alt="stars" /></a> | <a href="https://github.com/shabbirun/redesigned-octo-barnacle/network/members"><img src="https://img.shields.io/github/forks/shabbirun/redesigned-octo-barnacle" alt="forks" /></a> |
+| [awesome-n8n-templates](https://github.com/enescingoz/awesome-n8n-templates) | Collection of awesome n8n automation workflow templates | <a href="https://github.com/enescingoz/awesome-n8n-templates/stargazers"><img src="https://img.shields.io/github/stars/enescingoz/awesome-n8n-templates" alt="stars" /></a> | <a href="https://github.com/enescingoz/awesome-n8n-templates/network/members"><img src="https://img.shields.io/github/forks/enescingoz/awesome-n8n-templates" alt="forks" /></a> |
+| [Claudable](https://github.com/opactorai/Claudable) | AI-powered Claude integration and automation tools | <a href="https://github.com/opactorai/Claudable/stargazers"><img src="https://img.shields.io/github/stars/opactorai/Claudable" alt="stars" /></a> | <a href="https://github.com/opactorai/Claudable/network/members"><img src="https://img.shields.io/github/forks/opactorai/Claudable" alt="forks" /></a> |
 
 ### Web Tools & Services
 
@@ -119,6 +122,9 @@ A curated collection of helpful repositories for developers, featuring resources
 | Teal HQ | Job search and career management platform | [Visit](https://www.tealhq.com/) |
 | DeepL Translator | AI-powered translation service | [Visit](https://www.deepl.com/en/translator) |
 | Filemail | Large file sharing and transfer service | [Visit](https://www.filemail.com/) |
+| Page Ruler | Chrome extension for measuring and analyzing web page elements | [Chrome Web Store](https://chromewebstore.google.com/detail/page-ruler/jcbmcnpepaddcedmjdcmhbekjhbfnlff) |
+| UIWiki | Comprehensive UI component library and design system documentation | [Visit](https://uiwiki.co/) |
+| StirlingPDF | Free online PDF tools for conversion, editing, and manipulation | [Visit](https://stirlingpdf.io/?lang=en_US) |
 
 #### Hosting & Infrastructure
 | Tool | Description | Link |
