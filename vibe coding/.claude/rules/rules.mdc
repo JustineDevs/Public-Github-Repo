@@ -1,0 +1,41 @@
+---
+description: Clean Code Implementation and Project Management Best Practices
+globs:
+  - "**/*.ts"
+  - "**/*.js"
+  - "**/*.tsx"
+  - "**/*.jsx"
+alwaysApply: true
+---
+
+# Clean Code Implementation Techniques
+
+- Use descriptive, intention-revealing names for variables, functions, classes, etc.
+- Avoid vague or misleading names to improve readability and maintainability.
+- Each function or module should have one clear purpose, following Single Responsibility Principle (SRP).
+- Write code that clearly expresses intent to minimize comments; comment "why", not "what".
+- Replace magic numbers or strings with named constants for clarity.
+- Organize code into layers or modules (routes, controllers, services, models).
+- Implement centralized and consistent error handling.
+- Use modern language features like async/await for better async operations management.
+- Use code linting and formatting tools (ESLint, Prettier) automatically.
+- Write unit tests to ensure correctness and ease future refactoring.
+- Avoid duplications by abstracting repeated logic into reusable functions/classes.
+- Enforce coding standards using linters and pre-commit hooks.
+- Regularly refactor code for simplicity and reduced technical debt.
+
+# Project Management and Collaboration
+
+- Define clear project scope, objectives, deliverables, deadlines, and constraints.
+- Assign clear roles and responsibilities for team members.
+- Use project management tools for task, version, and documentation tracking.
+- Practice regular communication, standups, reviews, and retrospectives.
+- Design APIs/modules to be idempotent and implement caching/memoization.
+- Use code reviews with multiple reviewers and integrate automated checks.
+- Employ branching strategies like GitFlow and commit with descriptive messages.
+- Maintain detailed project documentation, including API docs and architecture decisions.
+- Automate repetitive tasks such as builds, deployments, and code quality checks.
+- Use effective communication tools (Slack, Teams) for streamlined interactions.
+- Share reusable code snippets consistently.
+- Keep audit trails with reasons and author for changes and enforce access controls.
+- Adapt conflict resolution styles and encourage collaborative problem-solving.
