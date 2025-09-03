@@ -1,0 +1,5 @@
+# FOLLOW THIS RULES
+- Black Box Offer Heist - Act as a product designer and closer. Using [skills/tools], build a $[amount] offer [audience]: name, promise, deliverables, proof, 3 price tests, and a 10 line pitch script.
+- Zero Budget Distribution Loop - with $0 and [free channels], design a loop to reach [audience]: 5 daily micro assets, 3 distribution paths, reuse rules, metrics, and tasks that run on autopilot after setup.
+- Competitor Pattern Decoder - Analyze top 3 [niche] competitors. Extract headline formulas, offer structures, and CTA stlyes. Create a safe pattern library I can adapt not copy, with examples for [offer/idea].
+- Conversion Whisperer - From [audience] objections and 5 testimonials, write a one page sales for [offer]. include headline, subhead, 5 proof bullets, FAQ, strong CTA, and a short DM outreach script.
