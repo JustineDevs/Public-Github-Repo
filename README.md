@@ -97,6 +97,9 @@ A curated collection of helpful repositories for developers, featuring resources
 | [public-apis](https://github.com/public-apis/public-apis) | A collective list of free APIs for use in software and web development | <a href="https://github.com/public-apis/public-apis/stargazers"><img src="https://img.shields.io/github/stars/public-apis/public-apis" alt="stars" /></a> | <a href="https://github.com/public-apis/public-apis/network/members"><img src="https://img.shields.io/github/forks/public-apis/public-apis" alt="forks" /></a> |
 | [Best-websites-a-programmer-should-visit](https://github.com/sdmg15/Best-websites-a-programmer-should-visit) | Some useful websites for programmers | <a href="https://github.com/sdmg15/Best-websites-a-programmer-should-visit/stargazers"><img src="https://img.shields.io/github/stars/sdmg15/Best-websites-a-programmer-should-visit" alt="stars" /></a> | <a href="https://github.com/sdmg15/Best-websites-a-programmer-should-visit/network/members"><img src="https://img.shields.io/github/forks/sdmg15/Best-websites-a-programmer-should-visit" alt="forks" /></a> |
 | [Wan2.2](https://github.com/Wan-Video/Wan2.2) | Video processing and analysis tool | <a href="https://github.com/Wan-Video/Wan2.2/stargazers"><img src="https://img.shields.io/github/stars/Wan-Video/Wan2.2" alt="stars" /></a> | <a href="https://github.com/Wan-Video/Wan2.2/network/members"><img src="https://img.shields.io/github/forks/Wan-Video/Wan2.2" alt="forks" /></a> |
+| [system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks) | Collection of leaked AI system prompts | <a href="https://github.com/asgeirtj/system_prompts_leaks/stargazers"><img src="https://img.shields.io/github/stars/asgeirtj/system_prompts_leaks" alt="stars" /></a> | <a href="https://github.com/asgeirtj/system_prompts_leaks/network/members"><img src="https://img.shields.io/github/forks/asgeirtj/system_prompts_leaks" alt="forks" /></a> |
+| [leaked-system-prompts](https://github.com/jujumilk3/leaked-system-prompts) | Repository of leaked AI system prompts | <a href="https://github.com/jujumilk3/leaked-system-prompts/stargazers"><img src="https://img.shields.io/github/stars/jujumilk3/leaked-system-prompts" alt="stars" /></a> | <a href="https://github.com/jujumilk3/leaked-system-prompts/network/members"><img src="https://img.shields.io/github/forks/jujumilk3/leaked-system-prompts" alt="forks" /></a> |
+| [awesome-ai-system-prompts](https://github.com/dontriskit/awesome-ai-system-prompts) | Curated list of awesome AI system prompts | <a href="https://github.com/dontriskit/awesome-ai-system-prompts/stargazers"><img src="https://img.shields.io/github/stars/dontriskit/awesome-ai-system-prompts" alt="stars" /></a> | <a href="https://github.com/dontriskit/awesome-ai-system-prompts/network/members"><img src="https://img.shields.io/github/forks/dontriskit/awesome-ai-system-prompts" alt="forks" /></a> |
 
 ### Web Tools & Services
 
@@ -117,6 +120,11 @@ A curated collection of helpful repositories for developers, featuring resources
 | Luma AI | AI-powered 3D generation and creative tools | [Visit](https://www.luma.ai/) |
 | Ideogram AI | AI image generation and editing platform | [Visit](https://ideogram.ai/) |
 | LlamaCoder | AI-powered coding assistant by Together AI | [Visit](https://llamacoder.together.ai/) |
+| ElevenLabs | AI voice synthesis and speech generation platform | [Visit](https://try.elevenlabs.io/c3og72qkb5sv) |
+| Hera | AI-powered productivity and automation tool | [Visit](https://hera.cello.so/KAne9evwU5F) |
+| Enhancor | AI-powered content enhancement and optimization | [Visit](https://app.enhancor.ai/) |
+| Gigapixel AI | AI-powered image upscaling and enhancement | [Visit](https://gigapixelai.com/) |
+| Fal AI | AI platform for image generation and processing | [Visit](https://fal.ai/) |
 
 #### Audio & Speech Tools
 | Tool | Description | Link |
