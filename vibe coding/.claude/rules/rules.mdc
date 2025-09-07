@@ -23,6 +23,8 @@ alwaysApply: true
 - Avoid duplications by abstracting repeated logic into reusable functions/classes.
 - Enforce coding standards using linters and pre-commit hooks.
 - Regularly refactor code for simplicity and reduced technical debt.
+- Avoid Emoji on UI and Codebase
+- Always Professional UI Layout Positioning, Font, Spacing, and more releants
 
 # Project Management and Collaboration
 
