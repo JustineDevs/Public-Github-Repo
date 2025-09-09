@@ -26,6 +26,30 @@ alwaysApply: true
 - Avoid Emoji on UI and Codebase
 - Always Professional UI Layout Positioning, Font, Spacing, and more releants
 
+# Avoid Deleting Root/Database and Project Safety Best Practices
+
+- Implement database-level safeguards such as triggers to prevent accidental DELETE operations.
+- Restrict user permissions in the database and filesystem to limit delete rights to only necessary users.
+- Mark critical files and folders as immutable on Linux (`chattr +i`) or read-only on Windows (NTFS permissions).
+- Use aliases or safety wrappers for destructive commands (`rm`, `del`) to require confirmation before deletion.
+- In IDEs, prefer remove or exclude folder operations that do not physically delete files (e.g., IntelliJ content root removal).
+- Regularly back up your database and project files with automated or manual systems.
+- Use version control (Git) extensively to track, revert, and protect code changes.
+- Separate critical database files or root folders into protected or less accessible locations.
+- Educate your team about safe file and database handling practices.
+- Automate checks for sensitive actions in CI/CD pipelines or pre-commit hooks.
+- Log and audit all destructive operations for traceability and accountability.
+- Avoid executing destructive commands/scripts without double confirmation or review.
+
+# General Project Safety and Collaboration
+
+- Define clear roles and responsibilities, especially around database and root access.
+- Use project management tools to track changes, deployments, and backups.
+- Enforce coding and operational standards with linters, hooks, and automated checks.
+- Regular communication, code review, and knowledge sharing reduce accidental errors.
+- Design APIs and scripts idempotently to safely handle repeat actions without data loss.
+- Keep thorough documentation including database schemas, backup procedures, and file structures.
+
 # Project Management and Collaboration
 
 - Define clear project scope, objectives, deliverables, deadlines, and constraints.
