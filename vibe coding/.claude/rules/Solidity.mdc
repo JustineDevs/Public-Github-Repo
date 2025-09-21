@@ -1,11 +1,9 @@
-Below are instructions for smart contract development, formatted for a Solidity.mdc rules file. These guidelines combine code safety, clean architecture, security, and collaboration practices tailored to Solidity projects.[1][2][3][4][5][6][7]
-
-***
+---
 description: Solidity Smart Contract Clean Practices and Project Safety
 globs:
   - "**/*.sol"
 alwaysApply: true
-***
+---
 
 # Solidity Code Implementation Techniques
 
