@@ -151,6 +151,65 @@ A curated collection of helpful repositories for developers, featuring resources
 | Mobbin | Design inspiration and UI patterns | [Visit](https://mobbin.com/) |
 | Bento Grids | Beautiful grid layouts and components | [Visit](https://bentogrids.com/) |
 
+### UI/UX Design Tools
+
+| Tool | Description | Link |
+|------|-------------|------|
+| Kimi | AI-powered design and collaboration platform | [Visit](http://kimi.com/) |
+| Shader Gradient | Beautiful gradient generator for web design | [Visit](http://shadergradient.co/) |
+| Humane by Design | Design principles for humane technology | [Visit](http://humanebydesign.com/) |
+| Flair AI | AI-powered design tool for creating visual content | [Visit](http://flair.ai/) |
+| Wireframe.cc | Simple wireframing tool for quick mockups | [Visit](http://wireframe.cc/) |
+| Octopus.do | Visual sitemap and user flow creation tool | [Visit](http://octopus.do/) |
+| Nulab | Project management and collaboration tools | [Visit](http://nulab.com/) |
+| LottieLab | Create and edit Lottie animations | [Visit](http://lottielab.com/) |
+| MockupBro | Free mockup generator for presentations | [Visit](http://mockupbro.com/) |
+| Colormind | AI-powered color palette generator | [Visit](http://colormind.io/) |
+| Shapes for Framer | Collection of shapes and graphics for Framer | [Visit](https://shapes.framer.website/) |
+| Free Faces | Free font collection and typography resources | [Visit](http://freefaces.gallery/) |
+| Flectofy | Interactive design tool for Framer | [Visit](https://flectofy.flecto.io/) |
+
+#### Design Inspiration & Portfolios
+
+| Tool | Description | Link |
+|------|-------------|------|
+| Portfolios | Curated collection of design portfolios | [Visit](http://portfolios.com/) |
+| Behance | Creative portfolio platform by Adobe | [Visit](http://behance.net/) |
+| Uncut | Design inspiration and creative showcase | [Visit](http://uncut.wtf/) |
+| SaaSpo | SaaS landing page inspiration | [Visit](https://saaspo.com) |
+| One Page Love | Single page website inspiration | [Visit](https://onepagelove.com) |
+| Godly | Curated collection of beautiful websites | [Visit](http://godly.website/) |
+| Maxi Best Of | Best website designs and inspiration | [Visit](http://maxibestof.website/) |
+| Land Book | Landing page design inspiration | [Visit](http://land-book.com/) |
+| CSS Design Awards | Web design awards and inspiration | [Visit](http://cssdesignawards.com/) |
+
+#### Typography & Fonts
+
+| Tool | Description | Link |
+|------|-------------|------|
+| Fontshare | Free font collection and typography tools | [Visit](http://fontshare.com/) |
+| Velvetyne | Open source typography and font foundry | [Visit](http://velventyne.fr/) |
+
+#### Logo & Graphics Resources
+
+| Tool | Description | Link |
+|------|-------------|------|
+| LogoPond | Logo design inspiration and showcase | [Visit](http://logopond.com/) |
+| Logo System | Logo design and branding resources | [Visit](http://logosystem.com/) |
+| PNGIMG | Free PNG images and graphics | [Visit](http://pngimg.com/) |
+| World in Dots | Dotted pattern and texture resources | [Visit](https://www.worldindots.com/) |
+| Shapeoholic | Geometric shapes and patterns | [Visit](https://shapeoholic.live/) |
+| SVG Doodles | Hand-drawn SVG illustrations and doodles | [Visit](https://svgdoodles.com/) |
+
+#### Figma Plugins
+
+| Plugin | Description | Category |
+|--------|-------------|----------|
+| Color Wheel | Advanced color palette and harmony tools | Color |
+| Icons8 | Icon library and design assets | Icons |
+| Vector Logos | Professional logo templates and vectors | Logos |
+| Flectofy | Interactive design components for Framer | Components |
+
 ### Vibe Coding & Claude Agents
 
 | Resource | Description | Type |
@@ -168,6 +227,7 @@ A curated collection of helpful repositories for developers, featuring resources
 - **Learning Resources**: Courses, tutorials, and educational materials
 - **Tools & Libraries**: Development utilities and frameworks
 - **Web Tools**: Online services and web-based applications
+- **UI/UX Design Tools**: Design tools, inspiration, and resources for user interface and experience design
 - **Vibe Coding & Claude Agents**: Claude AI agent examples and development resources
 
 ## 🚀 Getting Started
