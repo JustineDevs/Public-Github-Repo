@@ -195,7 +195,7 @@ A curated collection of helpful repositories for developers, featuring resources
 | SaaSpo | SaaS landing page inspiration | [Visit](https://saaspo.com) |
 | One Page Love | Single page website inspiration | [Visit](https://onepagelove.com) |
 | Godly | Curated collection of beautiful websites | [Visit](http://godly.website/) |
-| Maxi Best Of | Best website designs and inspiration | [Visit](http://maxibestof.website/) |
+| Maxi Best Of | Best website designs and inspiration | [Visit](https://maxibestof.one/) |
 | Land Book | Landing page design inspiration | [Visit](http://land-book.com/) |
 | CSS Design Awards | Web design awards and inspiration | [Visit](http://cssdesignawards.com/) |
 
