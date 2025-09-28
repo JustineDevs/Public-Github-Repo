@@ -100,6 +100,8 @@ A curated collection of helpful repositories for developers, featuring resources
 | [system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks) | Collection of leaked AI system prompts | <a href="https://github.com/asgeirtj/system_prompts_leaks/stargazers"><img src="https://img.shields.io/github/stars/asgeirtj/system_prompts_leaks" alt="stars" /></a> | <a href="https://github.com/asgeirtj/system_prompts_leaks/network/members"><img src="https://img.shields.io/github/forks/asgeirtj/system_prompts_leaks" alt="forks" /></a> |
 | [leaked-system-prompts](https://github.com/jujumilk3/leaked-system-prompts) | Repository of leaked AI system prompts | <a href="https://github.com/jujumilk3/leaked-system-prompts/stargazers"><img src="https://img.shields.io/github/stars/jujumilk3/leaked-system-prompts" alt="stars" /></a> | <a href="https://github.com/jujumilk3/leaked-system-prompts/network/members"><img src="https://img.shields.io/github/forks/jujumilk3/leaked-system-prompts" alt="forks" /></a> |
 | [awesome-ai-system-prompts](https://github.com/dontriskit/awesome-ai-system-prompts) | Curated list of awesome AI system prompts | <a href="https://github.com/dontriskit/awesome-ai-system-prompts/stargazers"><img src="https://img.shields.io/github/stars/dontriskit/awesome-ai-system-prompts" alt="stars" /></a> | <a href="https://github.com/dontriskit/awesome-ai-system-prompts/network/members"><img src="https://img.shields.io/github/forks/dontriskit/awesome-ai-system-prompts" alt="forks" /></a> |
+| [Kimi-K2](https://github.com/MoonshotAI/Kimi-K2) | Large language model series with 1T parameters and agentic capabilities | <a href="https://github.com/MoonshotAI/Kimi-K2/stargazers"><img src="https://img.shields.io/github/stars/MoonshotAI/Kimi-K2" alt="stars" /></a> | <a href="https://github.com/MoonshotAI/Kimi-K2/network/members"><img src="https://img.shields.io/github/forks/MoonshotAI/Kimi-K2" alt="forks" /></a> |
+| [activepieces](https://github.com/activepieces/activepieces) | Open source workflow automation and integration platform | <a href="https://github.com/activepieces/activepieces/stargazers"><img src="https://img.shields.io/github/stars/activepieces/activepieces" alt="stars" /></a> | <a href="https://github.com/activepieces/activepieces/network/members"><img src="https://img.shields.io/github/forks/activepieces/activepieces" alt="forks" /></a> |
 
 ### Web Tools & Services
 
@@ -125,6 +127,13 @@ A curated collection of helpful repositories for developers, featuring resources
 | Enhancor | AI-powered content enhancement and optimization | [Visit](https://app.enhancor.ai/) |
 | Gigapixel AI | AI-powered image upscaling and enhancement | [Visit](https://gigapixelai.com/) |
 | Fal AI | AI platform for image generation and processing | [Visit](https://fal.ai/) |
+| VibePost | AI-powered social media content creation | [Visit](https://vibepost.app/) |
+| Notta | AI-powered transcription and note-taking | [Visit](https://www.notta.ai/en) |
+| MyMap | AI-powered mind mapping and visualization | [Visit](https://www.mymap.ai/) |
+| Klap | AI-powered video editing and creation | [Visit](https://klap.app/) |
+| Collov | AI-powered interior design and visualization | [Visit](https://collov.ai/) |
+| NotebookLM | AI-powered note-taking and research tool | [Visit](https://notebooklm.google/) |
+| AI Mobirise | AI-powered website builder | [Visit](https://ai.mobirise.com/) |
 
 #### Audio & Speech Tools
 | Tool | Description | Link |
@@ -143,6 +152,15 @@ A curated collection of helpful repositories for developers, featuring resources
 | Page Ruler | Chrome extension for measuring and analyzing web page elements | [Chrome Web Store](https://chromewebstore.google.com/detail/page-ruler/jcbmcnpepaddcedmjdcmhbekjhbfnlff) |
 | UIWiki | Comprehensive UI component library and design system documentation | [Visit](https://uiwiki.co/) |
 | StirlingPDF | Free online PDF tools for conversion, editing, and manipulation | [Visit](https://stirlingpdf.io/?lang=en_US) |
+| TinyWow | Free online tools for various file conversions and utilities | [Visit](https://tinywow.com/) |
+| JotForm | Online form builder and data collection platform | [Visit](https://www.jotform.com/) |
+| Open Source Alternative | Directory of open source alternatives to proprietary software | [Visit](https://www.opensourcealternative.to/) |
+| PDF Drive | Free PDF library and document sharing | [Visit](https://pdfdrive.webs.nf/) |
+| FlexClip | Online video editor and maker | [Visit](https://www.flexclip.com/) |
+| No More Copyright | Copyright-free resources and content | [Visit](https://nomorecopyright.com/) |
+| Zoo Design Studio | Design collaboration and prototyping platform | [Visit](https://zoo.dev/design-studio) |
+| Sevalla | AI-powered design and development tools | [Visit](https://sevalla.com/) |
+| Kigen Color | Color palette generator and design tool | [Visit](https://kigen.design/color) |
 
 #### Hosting & Infrastructure
 | Tool | Description | Link |
@@ -184,6 +202,8 @@ A curated collection of helpful repositories for developers, featuring resources
 | UI Colors | Color palette generator and tools | [Visit](https://uicolors.app/generate/000223) |
 | Magic UI | Modern UI components and design system | [Visit](https://magicui.design/) |
 | 21st | Modern UI components and design resources | [Visit](https://21st.dev/home) |
+| Kimi | AI-powered chat and collaboration platform | [Visit](https://www.kimi.com/en/) |
+| ClipZap | AI-powered content creation and editing tool | [Visit](https://www.clipzap.ai/) |
 
 #### Design Inspiration & Portfolios
 
@@ -246,6 +266,7 @@ A curated collection of helpful repositories for developers, featuring resources
 | [Frontend Architecture Expert](vibe%20coding/.claude/agent-examples/shadcn-frontend-architecture.md) | Expert agent for frontend architecture patterns | Markdown |
 | [MCP Expert](vibe%20coding/.claude/agent-examples/overall-mcp-expert.md) | Expert agent for Model Context Protocol | Markdown |
 | [Claude Documentation](vibe%20coding/.claude/claude.md) | Claude AI integration and usage documentation | Markdown |
+| [Concept and Terms Frontend](Concept%20and%20Terms%20Frontend/) | Frontend concepts, terms, and UI components documentation | Directory |
 
 ## 📚 Categories
 
