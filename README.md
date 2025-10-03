@@ -256,6 +256,12 @@ A curated collection of helpful repositories for developers, featuring resources
 | Vector Logos | Professional logo templates and vectors | Logos |
 | Flectofy | Interactive design components for Framer | Components |
 
+### MCP (Model Context Protocol)
+
+| Resource | Description | Type |
+|----------|-------------|------|
+| [MCP Tutorial](mcp/mcp-tutorial.md) | YouTube tutorials for Model Context Protocol learning | Markdown |
+
 ### Vibe Coding & Claude Agents
 
 | Resource | Description | Type |
@@ -275,6 +281,7 @@ A curated collection of helpful repositories for developers, featuring resources
 - **Tools & Libraries**: Development utilities and frameworks
 - **Web Tools**: Online services and web-based applications
 - **UI/UX Design Tools**: Design tools, inspiration, and resources for user interface and experience design
+- **MCP (Model Context Protocol)**: Model Context Protocol tutorials and resources
 - **Vibe Coding & Claude Agents**: Claude AI agent examples and development resources
 
 ## 🚀 Getting Started
