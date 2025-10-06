@@ -134,6 +134,7 @@ A curated collection of helpful repositories for developers, featuring resources
 | Collov | AI-powered interior design and visualization | [Visit](https://collov.ai/) |
 | NotebookLM | AI-powered note-taking and research tool | [Visit](https://notebooklm.google/) |
 | AI Mobirise | AI-powered website builder | [Visit](https://ai.mobirise.com/) |
+| Hitem3D | AI-powered 3D design and modeling platform | [Visit](https://hitem3d.ai/) |
 
 #### Audio & Speech Tools
 | Tool | Description | Link |
