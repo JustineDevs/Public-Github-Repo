@@ -182,6 +182,9 @@ while IFS= read -r line; do
         status="${line:0:2}"
         file="${line:3}"
         
+        # Clean up any existing quotes from git status output
+        file=$(echo "$file" | sed 's/^["'\'']\|["'\'']$//g')
+        
         # Skip excluded patterns
         if [[ "$file" =~ node_modules/ ]] || 
            [[ "$file" =~ \.git/ ]] || 
