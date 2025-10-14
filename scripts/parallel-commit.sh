@@ -64,27 +64,27 @@ get_commit_message() {
 
 # Function to commit a single file
 commit_file() {
-    local file=$1
-    local status=$2
+    local file="$1"
+    local status="$2"
     local commit_msg=$(get_commit_message "$file" "$status")
     
     if [[ "$DRY_RUN" == "true" ]]; then
-        print_color $YELLOW "[DRY RUN] Would commit: $file - \"$commit_msg\""
+        print_color $YELLOW "[DRY RUN] Would commit: \"$file\" - \"$commit_msg\""
         return 0
     fi
     
-    # Add the specific file
+    # Add the specific file with proper quoting for spaces
     if git add "$file" 2>/dev/null; then
-        # Commit the file
+        # Commit the file with proper quoting for the message
         if git commit -m "$commit_msg" 2>/dev/null; then
-            print_color $GREEN "✅ Committed: $file"
+            print_color $GREEN "✅ Committed: \"$file\""
             return 0
         else
-            print_color $RED "❌ Failed to commit $file (commit failed)"
+            print_color $RED "❌ Failed to commit \"$file\" (commit failed)"
             return 1
         fi
     else
-        print_color $RED "❌ Failed to add $file to staging"
+        print_color $RED "❌ Failed to add \"$file\" to staging"
         return 1
     fi
 }
@@ -106,6 +106,7 @@ process_files_parallel() {
             local file=$(echo "$file_info" | cut -d'|' -f1)
             local status=$(echo "$file_info" | cut -d'|' -f2)
             
+            # Properly quote the file path for spaces
             commit_file "$file" "$status" &
             pids+=($!)
         done
@@ -213,7 +214,7 @@ for file_info in "${changed_files[@]}"; do
         *) icon="❓" ;;
     esac
     
-    print_color $BLUE "  $icon $file ($status)"
+    print_color $BLUE "  $icon \"$file\" ($status)"
 done
 
 # Process commits
