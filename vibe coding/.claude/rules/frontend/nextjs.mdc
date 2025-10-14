@@ -1,0 +1,61 @@
+---
+description: Frontend Rules
+globs:
+  - "**/*.ts"
+  - "**/*.tsx"
+alwaysApply: true
+---
+
+- Only respond to queries strictly within the defined topic; ignore and provide polite feedback for off-topic requests.
+
+- Use Next.js <Link> from next/link for all navigation; never use <a> for internal routing. Example:
+  import Link from "next/link"
+  <Link href="/destination">Go</Link>.
+
+- Always place Navbar and Footer components in layout.tsx (or your primary layout file) and import them at the root layout—not within individual pages.
+
+- Layout components (Navbar, Footer) should be persistent across all pages by inclusion in the shared layout.
+
+- UI should have clean, professional spacing, typography, and semantic structure for all on-topic agent responses.
+
+- Never display, render, or reference data or UI elements unrelated to the strict topic scope.
+
+- Enforce accessibility by using semantic HTML elements and meaningful labels.
+
+- Add clear UI feedback for any query that is off-topic and do not render an AI response for it.
+
+- Never allow unrelated external links, context, or information into layout, navigation, or agent responses.
+
+- Avoid emojis and decorative distractions both in UI and text.
+
+- Intent Filtering Component
+  Centralize topic validation logic in a React context or custom hook; reject and handle off-topic requests before generating or rendering a result.
+
+- Centralized Layout Pattern
+  Place both Navbar and Footer components in the main layout file so they appear on every page without repetitive imports.
+
+- Strict Navigation Pattern
+  Use only <Link href="/direction">...</Link> for routing; never use <a href=""> or mixed methods.
+
+- Fallback/Guard Pattern
+  If query fails topic validation, fall back to a clear user-facing error or redirect component within UI.
+
+- Do validate all queries against the topic before generating or displaying output.
+
+- Do import and persist Navbar and Footer in your main layout, not per-page.
+
+- Do use Next.js <Link href="/..."> for navigation everywhere.
+
+- Do style for professionalism: spacing, font, positioning, and accessibility.
+
+- Do offer clear feedback for blocked/out-of-scope queries.
+
+- Don't answer or render anything for completely off-topic queries.
+
+- Don't use <a> tags for internal navigation—use only Next.js <Link>.
+
+- Don't import Navbar/Footer in individual page files; keep them only in root layout.
+
+- Don't mix topical and off-topic context in layout or UI.
+
+- Don't use emojis, irrelevant images, or non-professional UI elements.
