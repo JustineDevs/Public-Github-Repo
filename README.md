@@ -71,6 +71,35 @@ A curated collection of helpful repositories for developers, featuring resources
 | [ossu-computer-science](https://github.com/ossu/computer-science) | Path to a free self-taught education in Computer Science | <a href="https://github.com/ossu/computer-science/stargazers"><img src="https://img.shields.io/github/stars/ossu/computer-science" alt="stars" /></a> | <a href="https://github.com/ossu/computer-science/network/members"><img src="https://img.shields.io/github/forks/ossu/computer-science" alt="forks" /></a> |
 | [ML-From-Scratch](https://github.com/eriklindernoren/ML-From-Scratch) | Machine Learning From Scratch. Bare bones NumPy implementations of machine learning models and algorithms | <a href="https://github.com/eriklindernoren/ML-From-Scratch/stargazers"><img src="https://img.shields.io/github/stars/eriklindernoren/ML-From-Scratch" alt="stars" /></a> | <a href="https://github.com/eriklindernoren/ML-From-Scratch/network/members"><img src="https://img.shields.io/github/forks/eriklindernoren/ML-From-Scratch" alt="forks" /></a> |
 | [build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | Master programming by recreating your favorite technologies from scratch | <a href="https://github.com/codecrafters-io/build-your-own-x/stargazers"><img src="https://img.shields.io/github/stars/codecrafters-io/build-your-own-x" alt="stars" /></a> | <a href="https://github.com/codecrafters-io/build-your-own-x/network/members"><img src="https://img.shields.io/github/forks/codecrafters-io/build-your-own-x" alt="forks" /></a> |
+| [Unsloth Training Guide](https://docs.unsloth.ai/new/how-to-train-llms-with-unsloth-and-docker) | Guide for training LLMs with Unsloth and Docker | Documentation |
+| [NVIDIA DLI Courses](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-07+V1) | NVIDIA Deep Learning Institute courses and training | [Visit](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-07+V1) |
+| [NVIDIA AI for All](https://academy.nvidia.com/en/course/ai-for-all-from-basics-to-genai-practice/?cm=81220) | AI for All: From Basics to GenAI Practice course | [Visit](https://academy.nvidia.com/en/course/ai-for-all-from-basics-to-genai-practice/?cm=81220) |
+| [NVIDIA RX-02 Course](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-RX-02+V2) | NVIDIA DLI RX-02 course | [Visit](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-RX-02+V2) |
+| [NVIDIA FX-01 Course](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+T-FX-01+V1) | NVIDIA DLI FX-01 course | [Visit](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+T-FX-01+V1) |
+| [NVIDIA IV-02 Course](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-IV-02+V2) | NVIDIA DLI IV-02 course | [Visit](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-IV-02+V2) |
+| [NVIDIA DS-02 Course](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+T-DS-02+V2) | NVIDIA DLI DS-02 course | [Visit](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+T-DS-02+V2) |
+| [NVIDIA DS-03 Course](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+T-DS-03+V1) | NVIDIA DLI DS-03 course | [Visit](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+T-DS-03+V1) |
+| [Coursera AI Infrastructure](https://www.coursera.org/learn/ai-infrastructure-operations-fundamentals) | AI Infrastructure Operations Fundamentals course | [Visit](https://www.coursera.org/learn/ai-infrastructure-operations-fundamentals) |
+| [OpenAI ChatGPT for Any Role](https://academy.openai.com/public/clubs/work-users-ynjqu/resources/chatgpt-for-any-role) | ChatGPT training for various professional roles | [Visit](https://academy.openai.com/public/clubs/work-users-ynjqu/resources/chatgpt-for-any-role) |
+| [OpenAI Product Use Cases](https://academy.openai.com/public/clubs/work-users-ynjqu/resources/use-cases-product) | ChatGPT use cases for product development | [Visit](https://academy.openai.com/public/clubs/work-users-ynjqu/resources/use-cases-product) |
+| [OpenAI Engineering Use Cases](https://academy.openai.com/public/clubs/work-users-ynjqu/resources/use-cases-engineers) | ChatGPT use cases for engineers | [Visit](https://academy.openai.com/public/clubs/work-users-ynjqu/resources/use-cases-engineers) |
+| [OpenAI Sales Use Cases](https://academy.openai.com/public/clubs/work-users-ynjqu/resources/use-cases-sales) | ChatGPT use cases for sales professionals | [Visit](https://academy.openai.com/public/clubs/work-users-ynjqu/resources/use-cases-sales) |
+| [OpenAI Marketing Use Cases](https://academy.openai.com/public/clubs/work-users-ynjqu/resources/use-cases-marketing) | ChatGPT use cases for marketing | [Visit](https://academy.openai.com/public/clubs/work-users-ynjqu/resources/use-cases-marketing) |
+| [OpenAI IT Use Cases](https://academy.openai.com/public/clubs/work-users-ynjqu/resources/use-cases-it) | ChatGPT use cases for IT professionals | [Visit](https://academy.openai.com/public/clubs/work-users-ynjqu/resources/use-cases-it) |
+| [OpenAI HR Use Cases](https://academy.openai.com/public/clubs/work-users-ynjqu/resources/use-cases-hr) | ChatGPT use cases for HR professionals | [Visit](https://academy.openai.com/public/clubs/work-users-ynjqu/resources/use-cases-hr) |
+| [OpenAI Management Use Cases](https://academy.openai.com/public/clubs/work-users-ynjqu/resources/use-cases-for-managers) | ChatGPT use cases for managers | [Visit](https://academy.openai.com/public/clubs/work-users-ynjqu/resources/use-cases-for-managers) |
+| [OpenAI Finance Use Cases](https://academy.openai.com/public/clubs/work-users-ynjqu/resources/use-cases-finance) | ChatGPT use cases for finance professionals | [Visit](https://academy.openai.com/public/clubs/work-users-ynjqu/resources/use-cases-finance) |
+| [OpenAI Customer Success Use Cases](https://academy.openai.com/public/clubs/work-users-ynjqu/resources/use-cases-customer-success) | ChatGPT use cases for customer success | [Visit](https://academy.openai.com/public/clubs/work-users-ynjqu/resources/use-cases-customer-success) |
+| [Google Cloud Skills Boost - Course 539](https://www.cloudskillsboost.google/course_templates/539) | Google Cloud Skills Boost course template 539 | [Visit](https://www.cloudskillsboost.google/course_templates/539) |
+| [Google Cybersecurity Certificate](https://www.coursera.org/professional-certificates/google-cybersecurity) | Google Cybersecurity Professional Certificate | [Visit](https://www.coursera.org/professional-certificates/google-cybersecurity) |
+| [Google Cloud Skills Boost - Course 541](https://www.cloudskillsboost.google/course_templates/541) | Google Cloud Skills Boost course template 541 | [Visit](https://www.cloudskillsboost.google/course_templates/541) |
+| [Prompting Essentials Specialization](https://www.coursera.org/specializations/prompting-essentials-google) | Google Prompting Essentials Specialization | [Visit](https://www.coursera.org/specializations/prompting-essentials-google) |
+| [Google Cloud Skills Boost - Course 695](https://www.cloudskillsboost.google/course_templates/695) | Google Cloud Skills Boost course template 695 | [Visit](https://www.cloudskillsboost.google/course_templates/695) |
+| [Machine Learning Introduction Specialization](https://www.coursera.org/specializations/machine-learning-introduction) | Machine Learning Introduction Specialization | [Visit](https://www.coursera.org/specializations/machine-learning-introduction) |
+| [Google Cloud Skills Boost - Course 554](https://www.cloudskillsboost.google/course_templates/554) | Google Cloud Skills Boost course template 554 | [Visit](https://www.cloudskillsboost.google/course_templates/554) |
+| [Google Data Analytics Capstone](https://www.coursera.org/learn/google-data-analytics-capstone) | Google Data Analytics Capstone Project | [Visit](https://www.coursera.org/learn/google-data-analytics-capstone) |
+| [Data Analysis with Python](https://www.coursera.org/learn/data-analysis-with-python) | Data Analysis with Python course | [Visit](https://www.coursera.org/learn/data-analysis-with-python) |
+| [Google Digital Marketing Certificate](https://www.coursera.org/google-certificates/digital-marketing-certificate) | Google Digital Marketing & E-commerce Certificate | [Visit](https://www.coursera.org/google-certificates/digital-marketing-certificate) |
 
 ### Tools & Libraries
 
@@ -97,6 +126,11 @@ A curated collection of helpful repositories for developers, featuring resources
 | [public-apis](https://github.com/public-apis/public-apis) | A collective list of free APIs for use in software and web development | <a href="https://github.com/public-apis/public-apis/stargazers"><img src="https://img.shields.io/github/stars/public-apis/public-apis" alt="stars" /></a> | <a href="https://github.com/public-apis/public-apis/network/members"><img src="https://img.shields.io/github/forks/public-apis/public-apis" alt="forks" /></a> |
 | [Best-websites-a-programmer-should-visit](https://github.com/sdmg15/Best-websites-a-programmer-should-visit) | Some useful websites for programmers | <a href="https://github.com/sdmg15/Best-websites-a-programmer-should-visit/stargazers"><img src="https://img.shields.io/github/stars/sdmg15/Best-websites-a-programmer-should-visit" alt="stars" /></a> | <a href="https://github.com/sdmg15/Best-websites-a-programmer-should-visit/network/members"><img src="https://img.shields.io/github/forks/sdmg15/Best-websites-a-programmer-should-visit" alt="forks" /></a> |
 | [Wan2.2](https://github.com/Wan-Video/Wan2.2) | Video processing and analysis tool | <a href="https://github.com/Wan-Video/Wan2.2/stargazers"><img src="https://img.shields.io/github/stars/Wan-Video/Wan2.2" alt="stars" /></a> | <a href="https://github.com/Wan-Video/Wan2.2/network/members"><img src="https://img.shields.io/github/forks/Wan-Video/Wan2.2" alt="forks" /></a> |
+| [mcp-ui](https://github.com/idosal/mcp-ui) | UI components and tools for Model Context Protocol | <a href="https://github.com/idosal/mcp-ui/stargazers"><img src="https://img.shields.io/github/stars/idosal/mcp-ui" alt="stars" /></a> | <a href="https://github.com/idosal/mcp-ui/network/members"><img src="https://img.shields.io/github/stars/idosal/mcp-ui" alt="stars" /></a> |
+| [docling](https://github.com/docling-project/docling) | Document processing and analysis library | <a href="https://github.com/docling-project/docling/stargazers"><img src="https://img.shields.io/github/stars/docling-project/docling" alt="stars" /></a> | <a href="https://github.com/docling-project/docling/network/members"><img src="https://img.shields.io/github/stars/docling-project/docling" alt="stars" /></a> |
+| [MassGen](https://github.com/Leezekun/MassGen) | Mass generation tool for content creation | <a href="https://github.com/Leezekun/MassGen/stargazers"><img src="https://img.shields.io/github/stars/Leezekun/MassGen" alt="stars" /></a> | <a href="https://github.com/Leezekun/MassGen/network/members"><img src="https://img.shields.io/github/stars/Leezekun/MassGen" alt="stars" /></a> |
+| [ColiVara](https://github.com/tjmlabs/ColiVara) | AI-powered development and automation tool | <a href="https://github.com/tjmlabs/ColiVara/stargazers"><img src="https://img.shields.io/github/stars/tjmlabs/ColiVara" alt="stars" /></a> | <a href="https://github.com/tjmlabs/ColiVara/network/members"><img src="https://img.shields.io/github/stars/tjmlabs/ColiVara" alt="stars" /></a> |
+| [ComeCut](https://github.com/0xSojalSec/ComeCut) | Content cutting and editing tool | <a href="https://github.com/0xSojalSec/ComeCut/stargazers"><img src="https://img.shields.io/github/stars/0xSojalSec/ComeCut" alt="stars" /></a> | <a href="https://github.com/0xSojalSec/ComeCut/network/members"><img src="https://img.shields.io/github/stars/0xSojalSec/ComeCut" alt="stars" /></a> |
 | [system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks) | Collection of leaked AI system prompts | <a href="https://github.com/asgeirtj/system_prompts_leaks/stargazers"><img src="https://img.shields.io/github/stars/asgeirtj/system_prompts_leaks" alt="stars" /></a> | <a href="https://github.com/asgeirtj/system_prompts_leaks/network/members"><img src="https://img.shields.io/github/forks/asgeirtj/system_prompts_leaks" alt="forks" /></a> |
 | [leaked-system-prompts](https://github.com/jujumilk3/leaked-system-prompts) | Repository of leaked AI system prompts | <a href="https://github.com/jujumilk3/leaked-system-prompts/stargazers"><img src="https://img.shields.io/github/stars/jujumilk3/leaked-system-prompts" alt="stars" /></a> | <a href="https://github.com/jujumilk3/leaked-system-prompts/network/members"><img src="https://img.shields.io/github/forks/jujumilk3/leaked-system-prompts" alt="forks" /></a> |
 | [awesome-ai-system-prompts](https://github.com/dontriskit/awesome-ai-system-prompts) | Curated list of awesome AI system prompts | <a href="https://github.com/dontriskit/awesome-ai-system-prompts/stargazers"><img src="https://img.shields.io/github/stars/dontriskit/awesome-ai-system-prompts" alt="stars" /></a> | <a href="https://github.com/dontriskit/awesome-ai-system-prompts/network/members"><img src="https://img.shields.io/github/forks/dontriskit/awesome-ai-system-prompts" alt="forks" /></a> |
@@ -135,6 +169,8 @@ A curated collection of helpful repositories for developers, featuring resources
 | NotebookLM | AI-powered note-taking and research tool | [Visit](https://notebooklm.google/) |
 | AI Mobirise | AI-powered website builder | [Visit](https://ai.mobirise.com/) |
 | Hitem3D | AI-powered 3D design and modeling platform | [Visit](https://hitem3d.ai/) |
+| TopoExport | 3D topology and mesh export tool | [Visit](https://topoexport.com/) |
+| Zoo Design Studio | Design collaboration and prototyping platform | [Visit](https://zoo.dev/design-studio) |
 
 #### Audio & Speech Tools
 | Tool | Description | Link |
@@ -291,6 +327,23 @@ A curated collection of helpful repositories for developers, featuring resources
 2. **Check Stars**: Click on the star badges to see current popularity
 3. **Explore Forks**: Click on fork badges to see community contributions
 4. **Clone & Contribute**: Star and fork repositories you find useful
+
+## ⚡ Quick Commits
+
+This repository includes automated parallel commit scripts for efficient development:
+
+```bash
+# Preview changes before committing
+npm run commit:dry
+
+# Commit all changes with parallel processing
+npm run commit
+
+# Use shell script version (faster)
+npm run commit:sh
+```
+
+See [COMMIT_GUIDE.md](COMMIT_GUIDE.md) for detailed usage instructions.
 
 ## 🤝 Contributing
 
