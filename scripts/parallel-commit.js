@@ -53,6 +53,12 @@ function getChangedFiles() {
           const regex = new RegExp(pattern.replace(/\*\*/g, '.*').replace(/\*/g, '[^/]*'));
           return regex.test(file);
         });
+      })
+      .map(({ status, file }) => {
+        // Handle files with spaces by ensuring proper quoting
+        // Remove any existing quotes and re-add them properly
+        const cleanFile = file.replace(/^["']|["']$/g, '');
+        return { status, file: cleanFile };
       });
   } catch (error) {
     log('Error getting git status:', 'red');
