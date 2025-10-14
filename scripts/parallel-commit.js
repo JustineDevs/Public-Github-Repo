@@ -94,22 +94,22 @@ function commitFile(file, status) {
     const commitMessage = getCommitMessage(file, status);
     
     if (config.dryRun) {
-      log(`[DRY RUN] Would commit: ${file} - "${commitMessage}"`, 'yellow');
+      log(`[DRY RUN] Would commit: "${file}" - "${commitMessage}"`, 'yellow');
       resolve({ file, success: true, message: commitMessage });
       return;
     }
     
     try {
-      // Add the specific file
+      // Add the specific file with proper quoting for spaces
       execSync(`git add "${file}"`, { stdio: 'pipe' });
       
-      // Commit the file
+      // Commit the file with proper quoting for the message
       execSync(`git commit -m "${commitMessage}"`, { stdio: 'pipe' });
       
-      log(`✅ Committed: ${file}`, 'green');
+      log(`✅ Committed: "${file}"`, 'green');
       resolve({ file, success: true, message: commitMessage });
     } catch (error) {
-      log(`❌ Failed to commit ${file}: ${error.message}`, 'red');
+      log(`❌ Failed to commit "${file}": ${error.message}`, 'red');
       reject({ file, success: false, error: error.message });
     }
   });
@@ -155,7 +155,7 @@ function showSummary(results) {
     failed.forEach(result => {
       const file = result.status === 'fulfilled' ? result.value.file : result.reason.file;
       const error = result.status === 'fulfilled' ? result.value.error : result.reason.error;
-      log(`  - ${file}: ${error}`, 'red');
+      log(`  - "${file}": ${error}`, 'red');
     });
   }
 }
@@ -207,7 +207,7 @@ async function main() {
                       status.includes('M') ? '📝' : 
                       status.includes('D') ? '🗑️' : 
                       status.includes('R') ? '🔄' : '❓';
-    log(`  ${statusIcon} ${file} (${status})`, 'blue');
+    log(`  ${statusIcon} "${file}" (${status})`, 'blue');
   });
   
   // Process commits
