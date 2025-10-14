@@ -38,7 +38,8 @@ bash scripts/parallel-commit.sh
 2. **Generate Commit Messages**: Creates contextual commit messages based on file changes
 3. **Parallel Processing**: Commits multiple files simultaneously for speed
 4. **Smart Filtering**: Excludes build artifacts, logs, and temporary files
-5. **Error Handling**: Continues processing even if individual commits fail
+5. **Space-Safe Handling**: Properly handles files and directories with spaces using double quotes
+6. **Error Handling**: Continues processing even if individual commits fail
 
 ## Commit Message Examples
 
