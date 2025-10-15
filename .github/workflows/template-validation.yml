@@ -1,0 +1,270 @@
+name: Template System Validation
+
+on:
+  pull_request:
+    branches: [main, develop]
+    paths:
+      - 'vibe coding/.cursor/rules/**'
+      - '**/*.mdc'
+  push:
+    branches: [main, develop]
+    paths:
+      - 'vibe coding/.cursor/rules/**'
+      - '**/*.mdc'
+
+jobs:
+  validate-templates:
+    runs-on: ubuntu-latest
+    name: Validate Template Files
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Validate Template Structure
+        run: |
+          echo "🔍 Validating template file structure..."
+          
+          # Check if template files exist
+          if [ ! -d "vibe coding/.cursor/rules" ]; then
+            echo "❌ Template rules directory not found"
+            exit 1
+          fi
+          
+          # Count template files
+          template_count=$(find "vibe coding/.cursor/rules" -name "*.mdc" | wc -l)
+          echo "📊 Found $template_count template files"
+          
+          # Validate each template file
+          for template in "vibe coding/.cursor/rules"/*.mdc; do
+            if [ -f "$template" ]; then
+              echo "🔍 Validating $(basename "$template")..."
+              
+              # Check if file has YAML frontmatter
+              if ! head -1 "$template" | grep -q "^---$"; then
+                echo "❌ $(basename "$template") missing YAML frontmatter"
+                exit 1
+              fi
+              
+              # Check if file has description
+              if ! grep -q "description:" "$template"; then
+                echo "❌ $(basename "$template") missing description"
+                exit 1
+              fi
+              
+              # Check if file has globs
+              if ! grep -q "globs:" "$template"; then
+                echo "❌ $(basename "$template") missing globs"
+                exit 1
+              fi
+              
+              # Check if file has alwaysApply
+              if ! grep -q "alwaysApply:" "$template"; then
+                echo "❌ $(basename "$template") missing alwaysApply"
+                exit 1
+              fi
+              
+              echo "✅ $(basename "$template") structure valid"
+            fi
+          done
+          
+          echo "🎉 All template files validated successfully!"
+          
+      - name: Check Template Coverage
+        run: |
+          echo "📊 Checking template coverage..."
+          
+          # Check for development template
+          if [ -f "vibe coding/.cursor/rules/development.mdc" ]; then
+            echo "✅ Development template found"
+          else
+            echo "❌ Development template missing"
+            exit 1
+          fi
+          
+          # Check for backend template
+          if [ -f "vibe coding/.cursor/rules/backend.mdc" ]; then
+            echo "✅ Backend template found"
+          else
+            echo "❌ Backend template missing"
+            exit 1
+          fi
+          
+          # Check for frontend template
+          if [ -f "vibe coding/.cursor/rules/frontend.mdc" ]; then
+            echo "✅ Frontend template found"
+          else
+            echo "❌ Frontend template missing"
+            exit 1
+          fi
+          
+          # Check for MCP template
+          if [ -f "vibe coding/.cursor/rules/mcp.mdc" ]; then
+            echo "✅ MCP template found"
+          else
+            echo "❌ MCP template missing"
+            exit 1
+          fi
+          
+          # Check for CI template
+          if [ -f "vibe coding/.cursor/rules/ci.mdc" ]; then
+            echo "✅ CI/CD template found"
+          else
+            echo "❌ CI/CD template missing"
+            exit 1
+          fi
+          
+          # Check for audit template
+          if [ -f "vibe coding/.cursor/rules/audit.mdc" ]; then
+            echo "✅ Audit template found"
+          else
+            echo "❌ Audit template missing"
+            exit 1
+          fi
+          
+          echo "🎉 All required templates present!"
+          
+      - name: Validate Template Content
+        run: |
+          echo "📝 Validating template content quality..."
+          
+          for template in "vibe coding/.cursor/rules"/*.mdc; do
+            if [ -f "$template" ]; then
+              echo "🔍 Checking content in $(basename "$template")..."
+              
+              # Check file size (should be substantial)
+              file_size=$(wc -c < "$template")
+              if [ "$file_size" -lt 1000 ]; then
+                echo "⚠️  $(basename "$template") seems too short ($file_size bytes)"
+              else
+                echo "✅ $(basename "$template") has adequate content ($file_size bytes)"
+              fi
+              
+              # Check for key sections
+              if grep -q "Implementation Techniques" "$template"; then
+                echo "✅ $(basename "$template") has Implementation Techniques section"
+              else
+                echo "⚠️  $(basename "$template") missing Implementation Techniques section"
+              fi
+              
+              if grep -q "Security" "$template"; then
+                echo "✅ $(basename "$template") has Security section"
+              else
+                echo "⚠️  $(basename "$template") missing Security section"
+              fi
+              
+              if grep -q "Pre-Deployment Checklist" "$template"; then
+                echo "✅ $(basename "$template") has Pre-Deployment Checklist"
+              else
+                echo "⚠️  $(basename "$template") missing Pre-Deployment Checklist"
+              fi
+            fi
+          done
+          
+          echo "🎉 Template content validation completed!"
+
+  test-template-application:
+    runs-on: ubuntu-latest
+    name: Test Template Application
+    needs: validate-templates
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Test Template System Integration
+        run: |
+          echo "🧪 Testing template system integration..."
+          
+          # Test if parallel commit script works
+          echo "Testing parallel commit script..."
+          node scripts/parallel-commit.js --dry-run
+          
+          # Test if package.json scripts work
+          echo "Testing package.json scripts..."
+          npm run status
+          
+          echo "✅ Template system integration tests passed!"
+
+  generate-template-report:
+    runs-on: ubuntu-latest
+    name: Generate Template Report
+    needs: [validate-templates, test-template-application]
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Generate Template System Report
+        run: |
+          echo "📊 Generating template system report..."
+          mkdir -p reports/
+          
+          cat > reports/template-system-report.md << EOF
+          # Template System Report
+          
+          Generated: $(date)
+          
+          ## Template Files Status
+          
+          EOF
+          
+          # List all template files
+          echo "### Available Templates:" >> reports/template-system-report.md
+          for template in "vibe coding/.cursor/rules"/*.mdc; do
+            if [ -f "$template" ]; then
+              filename=$(basename "$template")
+              filesize=$(wc -c < "$template")
+              echo "- **$filename**: $filesize bytes" >> reports/template-system-report.md
+            fi
+          done
+          
+          echo "" >> reports/template-system-report.md
+          echo "## File Coverage Analysis" >> reports/template-system-report.md
+          
+          # Count files by type
+          js_count=$(find . -name "*.js" | wc -l)
+          ts_count=$(find . -name "*.ts" | wc -l)
+          py_count=$(find . -name "*.py" | wc -l)
+          go_count=$(find . -name "*.go" | wc -l)
+          java_count=$(find . -name "*.java" | wc -l)
+          cs_count=$(find . -name "*.cs" | wc -l)
+          php_count=$(find . -name "*.php" | wc -l)
+          rb_count=$(find . -name "*.rb" | wc -l)
+          rs_count=$(find . -name "*.rs" | wc -l)
+          sol_count=$(find . -name "*.sol" | wc -l)
+          
+          echo "- JavaScript files: $js_count" >> reports/template-system-report.md
+          echo "- TypeScript files: $ts_count" >> reports/template-system-report.md
+          echo "- Python files: $py_count" >> reports/template-system-report.md
+          echo "- Go files: $go_count" >> reports/template-system-report.md
+          echo "- Java files: $java_count" >> reports/template-system-report.md
+          echo "- C# files: $cs_count" >> reports/template-system-report.md
+          echo "- PHP files: $php_count" >> reports/template-system-report.md
+          echo "- Ruby files: $rb_count" >> reports/template-system-report.md
+          echo "- Rust files: $rs_count" >> reports/template-system-report.md
+          echo "- Solidity files: $sol_count" >> reports/template-system-report.md
+          
+          echo "" >> reports/template-system-report.md
+          echo "## Template System Status" >> reports/template-system-report.md
+          echo "✅ All template files validated successfully" >> reports/template-system-report.md
+          echo "✅ Template system integration tests passed" >> reports/template-system-report.md
+          echo "✅ Ready for production use" >> reports/template-system-report.md
+          
+          echo "📊 Template system report generated successfully!"
+          
+      - name: Upload Template Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: template-system-report
+          path: reports/
+          retention-days: 30
