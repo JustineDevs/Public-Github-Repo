@@ -1,0 +1,252 @@
+---
+description: Model Context Protocol (MCP) Development and Integration Practices
+globs:
+  - "**/*.mcp"
+  - "**/*mcp*"
+  - "**/mcp/**"
+  - "**/*.json"
+  - "**/*.yaml"
+  - "**/*.yml"
+  - "**/server/**"
+  - "**/client/**"
+alwaysApply: true
+---
+
+# MCP Implementation Techniques
+
+- Design MCP servers with clear, focused responsibilities and single-purpose tools.
+- Implement proper MCP protocol compliance with standardized message formats.
+- Use proper error handling and status codes for MCP operations and responses.
+- Implement proper authentication and authorization mechanisms for MCP connections.
+- Use proper resource management and cleanup for MCP server lifecycle.
+- Implement proper logging and monitoring for MCP operations and debugging.
+- Use proper configuration management and environment-specific settings.
+- Implement proper validation and sanitization for MCP inputs and outputs.
+- Use proper async/await patterns for MCP operations and resource handling.
+- Implement proper connection pooling and resource optimization.
+- Use proper MCP client libraries and SDKs for consistent implementation.
+- Implement proper MCP server discovery and registration mechanisms.
+
+# MCP Server Design & Architecture
+
+- Design MCP servers with clear separation of concerns and modular architecture.
+- Implement proper MCP tool definitions with clear input/output schemas.
+- Use proper MCP resource management with appropriate lifecycle handling.
+- Implement proper MCP prompt templates with clear parameter definitions.
+- Use proper MCP server configuration with environment-specific settings.
+- Implement proper MCP server health checks and status monitoring.
+- Use proper MCP server versioning and backward compatibility strategies.
+- Implement proper MCP server documentation and API specifications.
+- Use proper MCP server testing strategies with unit and integration tests.
+- Implement proper MCP server deployment and scaling strategies.
+- Use proper MCP server security and access control mechanisms.
+- Implement proper MCP server monitoring and observability.
+
+# MCP Client Integration
+
+- Implement proper MCP client initialization and connection management.
+- Use proper MCP client error handling and retry mechanisms.
+- Implement proper MCP client resource discovery and tool enumeration.
+- Use proper MCP client authentication and security mechanisms.
+- Implement proper MCP client configuration and environment management.
+- Use proper MCP client logging and debugging capabilities.
+- Implement proper MCP client performance monitoring and optimization.
+- Use proper MCP client testing strategies and mocking.
+- Implement proper MCP client documentation and usage examples.
+- Use proper MCP client deployment and distribution strategies.
+- Implement proper MCP client security and access control.
+- Use proper MCP client monitoring and health checking.
+
+# MCP Protocol Compliance
+
+- Follow MCP protocol specifications and message format standards.
+- Implement proper MCP message validation and error handling.
+- Use proper MCP protocol versioning and compatibility checking.
+- Implement proper MCP protocol security and authentication.
+- Use proper MCP protocol logging and debugging mechanisms.
+- Implement proper MCP protocol performance monitoring and optimization.
+- Use proper MCP protocol testing strategies and validation.
+- Implement proper MCP protocol documentation and specifications.
+- Use proper MCP protocol deployment and configuration management.
+- Implement proper MCP protocol security and access control.
+- Use proper MCP protocol monitoring and observability.
+- Implement proper MCP protocol error recovery and resilience.
+
+# MCP Security & Authentication
+
+- Implement proper MCP authentication mechanisms (API keys, OAuth, certificates).
+- Use proper MCP authorization and access control for tools and resources.
+- Implement proper MCP data encryption for sensitive information.
+- Use proper MCP input validation and sanitization to prevent attacks.
+- Implement proper MCP audit logging and security monitoring.
+- Use proper MCP rate limiting and DDoS protection mechanisms.
+- Implement proper MCP secure communication protocols (TLS/SSL).
+- Use proper MCP security scanning and vulnerability assessment.
+- Implement proper MCP access control and permission management.
+- Use proper MCP security headers and protection mechanisms.
+- Implement proper MCP secure storage for sensitive data.
+- Use proper MCP security incident response and monitoring.
+
+# MCP Testing & Quality Assurance
+
+- Write comprehensive unit tests for MCP server and client implementations.
+- Implement proper integration tests for MCP protocol compliance.
+- Use proper end-to-end testing for MCP workflows and user scenarios.
+- Implement proper MCP performance testing and load testing.
+- Use proper MCP security testing and vulnerability assessment.
+- Implement proper MCP compatibility testing across different versions.
+- Use proper MCP mocking and stubbing for external dependencies.
+- Implement proper MCP test data management and environment setup.
+- Use proper MCP test coverage reporting and quality gates.
+- Implement proper MCP test documentation and test case management.
+- Use proper MCP automated testing in CI/CD pipelines.
+- Implement proper MCP test monitoring and reporting.
+
+# MCP Monitoring & Observability
+
+- Implement comprehensive logging for MCP operations and debugging.
+- Use proper MCP metrics collection and monitoring dashboards.
+- Implement proper MCP distributed tracing for complex workflows.
+- Use proper MCP alerting and notification systems for critical issues.
+- Implement proper MCP health checks and service status monitoring.
+- Use proper MCP error tracking and crash reporting.
+- Implement proper MCP performance monitoring and optimization.
+- Use proper MCP log aggregation and analysis tools.
+- Implement proper MCP business metrics and KPI monitoring.
+- Use proper MCP incident response and escalation procedures.
+- Implement proper MCP capacity monitoring and scaling triggers.
+- Use proper MCP security monitoring and threat detection.
+
+# MCP Configuration & Deployment
+
+- Use proper MCP configuration management with environment-specific settings.
+- Implement proper MCP deployment strategies with blue-green or canary deployments.
+- Use proper MCP containerization (Docker) and orchestration (Kubernetes).
+- Implement proper MCP infrastructure as code for consistent deployments.
+- Use proper MCP secrets management and secure configuration storage.
+- Implement proper MCP CI/CD pipelines with automated testing and deployment.
+- Use proper MCP environment management (dev, staging, production).
+- Implement proper MCP backup and disaster recovery procedures.
+- Use proper MCP monitoring and rollback procedures for deployments.
+- Implement proper MCP security scanning and vulnerability assessment.
+- Use proper MCP performance testing and validation in staging environments.
+- Implement proper MCP documentation and runbook maintenance.
+
+# MCP Error Handling & Resilience
+
+- Implement proper MCP error handling with consistent error response formats.
+- Use proper MCP retry mechanisms with exponential backoff for transient failures.
+- Implement proper MCP circuit breaker patterns for external service dependencies.
+- Use proper MCP timeout handling and graceful degradation.
+- Implement proper MCP fallback mechanisms for critical service failures.
+- Use proper MCP error logging and monitoring for debugging.
+- Implement proper MCP incident response and escalation procedures.
+- Use proper MCP chaos engineering for resilience testing.
+- Implement proper MCP disaster recovery and business continuity planning.
+- Use proper MCP health checks and service status monitoring.
+- Implement proper MCP load balancing and fault tolerance.
+- Use proper MCP data consistency and transaction management.
+
+# MCP Documentation & Standards
+
+- Maintain comprehensive MCP API documentation with examples and use cases.
+- Document MCP server capabilities, tools, and resource definitions.
+- Create MCP client integration guides and developer documentation.
+- Document MCP configuration options and environment setup.
+- Maintain MCP troubleshooting guides and common issues.
+- Document MCP security best practices and compliance requirements.
+- Create MCP performance optimization guides and best practices.
+- Document MCP deployment procedures and operational runbooks.
+- Maintain MCP version compatibility and migration guides.
+- Document MCP testing strategies and quality assurance procedures.
+- Create MCP monitoring and observability setup guides.
+- Document MCP incident response and escalation procedures.
+
+# MCP Pre-Deployment Checklist
+
+## MCP Server Implementation
+- [ ] MCP server properly implements protocol specifications
+- [ ] All MCP tools and resources properly defined and documented
+- [ ] MCP server authentication and authorization implemented
+- [ ] MCP server error handling and logging configured
+- [ ] MCP server performance optimization completed
+
+## MCP Client Integration
+- [ ] MCP client properly implements connection management
+- [ ] MCP client error handling and retry mechanisms implemented
+- [ ] MCP client authentication and security configured
+- [ ] MCP client logging and debugging capabilities enabled
+- [ ] MCP client performance monitoring configured
+
+## Security & Compliance
+- [ ] MCP security scan completed with no critical vulnerabilities
+- [ ] MCP authentication and authorization properly implemented
+- [ ] MCP data encryption and privacy compliance verified
+- [ ] MCP access controls and permission management configured
+- [ ] MCP audit logging and security monitoring enabled
+
+## Testing & Quality Assurance
+- [ ] MCP unit tests passing with adequate coverage
+- [ ] MCP integration tests completed successfully
+- [ ] MCP end-to-end tests passing for critical workflows
+- [ ] MCP performance testing completed and requirements met
+- [ ] MCP security testing completed with no critical issues
+
+## Monitoring & Operations
+- [ ] MCP logging and monitoring systems configured
+- [ ] MCP health checks and status monitoring implemented
+- [ ] MCP error tracking and alerting configured
+- [ ] MCP performance monitoring and metrics collection set up
+- [ ] MCP incident response procedures documented and tested
+
+## Deployment & DevOps
+- [ ] MCP CI/CD pipeline tested and working correctly
+- [ ] MCP environment configuration and secrets management set up
+- [ ] MCP deployment scripts tested in staging environment
+- [ ] MCP rollback procedures tested and documented
+- [ ] MCP documentation updated and current
+
+# MCP Naming Conventions
+
+- Use camelCase for MCP tool names, function names, and variable names.
+- Use PascalCase for MCP server classes, interfaces, and types.
+- Use UPPER_SNAKE_CASE for MCP constants and configuration values.
+- Use kebab-case for MCP resource names and configuration keys.
+- Use descriptive names that clearly indicate MCP functionality and purpose.
+- Use consistent naming patterns across all MCP implementations.
+- Use proper prefixes/suffixes for different types of MCP resources.
+- Follow MCP protocol naming conventions and standards.
+- Use meaningful names for MCP configuration files and environment variables.
+- Use consistent naming for MCP API endpoints and message types.
+
+# MCP Resource Management
+
+- Implement proper MCP resource lifecycle management and cleanup.
+- Use proper MCP resource discovery and enumeration mechanisms.
+- Implement proper MCP resource caching and optimization strategies.
+- Use proper MCP resource validation and error handling.
+- Implement proper MCP resource monitoring and performance tracking.
+- Use proper MCP resource security and access control.
+- Implement proper MCP resource documentation and metadata.
+- Use proper MCP resource versioning and compatibility management.
+- Implement proper MCP resource testing and validation strategies.
+- Use proper MCP resource deployment and configuration management.
+- Implement proper MCP resource backup and disaster recovery.
+- Use proper MCP resource monitoring and health checking.
+
+# MCP Tool Development
+
+- Design MCP tools with clear, focused functionality and single responsibility.
+- Implement proper MCP tool input validation and parameter checking.
+- Use proper MCP tool output formatting and response handling.
+- Implement proper MCP tool error handling and exception management.
+- Use proper MCP tool logging and debugging capabilities.
+- Implement proper MCP tool performance monitoring and optimization.
+- Use proper MCP tool testing strategies and validation.
+- Implement proper MCP tool documentation and usage examples.
+- Use proper MCP tool security and access control mechanisms.
+- Implement proper MCP tool versioning and backward compatibility.
+- Use proper MCP tool deployment and distribution strategies.
+- Implement proper MCP tool monitoring and health checking.
+
+By following these comprehensive MCP development practices, Model Context Protocol implementations will achieve high reliability, security, performance, and maintainability standards.

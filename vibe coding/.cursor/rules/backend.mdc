@@ -1,0 +1,254 @@
+---
+description: Backend Development Practices and API Design Standards
+globs:
+  - "**/*.js"
+  - "**/*.ts"
+  - "**/*.py"
+  - "**/*.go"
+  - "**/*.java"
+  - "**/*.cs"
+  - "**/*.php"
+  - "**/*.rb"
+  - "**/*.rs"
+  - "**/api/**"
+  - "**/server/**"
+  - "**/backend/**"
+alwaysApply: true
+---
+
+# Backend Implementation Techniques
+
+- Design RESTful APIs following REST principles with proper HTTP methods and status codes.
+- Implement proper API versioning strategies (URL versioning, header versioning, or content negotiation).
+- Use consistent naming conventions for endpoints (kebab-case for URLs, camelCase for JSON).
+- Implement proper request/response validation using schema validation libraries.
+- Use appropriate HTTP status codes (200, 201, 400, 401, 403, 404, 500) for different scenarios.
+- Implement proper error handling with consistent error response formats.
+- Use middleware patterns for cross-cutting concerns (authentication, logging, validation).
+- Implement proper input sanitization and validation to prevent injection attacks.
+- Use dependency injection and inversion of control for better testability and maintainability.
+- Implement proper database connection pooling and transaction management.
+- Use asynchronous processing for long-running operations and background tasks.
+- Implement proper caching strategies (Redis, Memcached) for frequently accessed data.
+
+# API Design & Documentation
+
+- Design APIs with clear, intuitive endpoints that follow RESTful conventions.
+- Use OpenAPI/Swagger specifications for comprehensive API documentation.
+- Implement proper API rate limiting and throttling mechanisms.
+- Use consistent response formats with proper error handling and status codes.
+- Implement API pagination for large datasets using cursor-based or offset-based pagination.
+- Use proper HTTP headers for caching, content negotiation, and security.
+- Implement API versioning with backward compatibility strategies.
+- Use proper authentication and authorization mechanisms (JWT, OAuth2, API keys).
+- Implement proper API monitoring and analytics for usage tracking.
+- Use API gateway patterns for microservices architecture.
+- Implement proper API testing strategies with contract testing.
+- Document all API endpoints with examples and use cases.
+
+# Database Design & Management
+
+- Design normalized database schemas with proper relationships and constraints.
+- Use appropriate database indexing strategies for query performance optimization.
+- Implement proper database migration strategies with rollback capabilities.
+- Use connection pooling and proper connection management for scalability.
+- Implement proper database backup and recovery procedures.
+- Use database monitoring and performance tuning tools.
+- Implement proper data validation at both application and database levels.
+- Use database transactions appropriately for data consistency.
+- Implement proper database security with role-based access controls.
+- Use database replication and clustering for high availability.
+- Implement proper data archiving and cleanup strategies.
+- Use database query optimization and performance monitoring.
+
+# Security & Authentication
+
+- Implement proper authentication mechanisms (JWT, OAuth2, SAML, LDAP).
+- Use secure password hashing algorithms (bcrypt, Argon2, scrypt).
+- Implement proper session management with secure session storage.
+- Use HTTPS/TLS for all API communications and data transmission.
+- Implement proper input validation and sanitization to prevent injection attacks.
+- Use security headers (CORS, CSP, HSTS) for web security.
+- Implement proper API key management and rotation strategies.
+- Use rate limiting and DDoS protection mechanisms.
+- Implement proper logging and monitoring for security events.
+- Use security scanning tools and vulnerability assessment.
+- Implement proper data encryption for sensitive information.
+- Use secure coding practices and regular security audits.
+
+# Microservices & Architecture
+
+- Design microservices with single responsibility and loose coupling principles.
+- Implement proper service discovery and registration mechanisms.
+- Use API gateways for routing, authentication, and rate limiting.
+- Implement proper inter-service communication patterns (synchronous and asynchronous).
+- Use message queues and event-driven architecture for decoupled services.
+- Implement proper circuit breaker patterns for fault tolerance.
+- Use containerization (Docker) and orchestration (Kubernetes) for deployment.
+- Implement proper service mesh for observability and security.
+- Use proper configuration management and environment-specific settings.
+- Implement proper health checks and service monitoring.
+- Use proper logging and distributed tracing across services.
+- Implement proper data consistency patterns (Saga, CQRS, Event Sourcing).
+
+# Performance & Scalability
+
+- Implement proper caching strategies (application-level, database, CDN).
+- Use database query optimization and proper indexing strategies.
+- Implement proper connection pooling and resource management.
+- Use asynchronous processing and background job queues.
+- Implement proper load balancing and horizontal scaling strategies.
+- Use database sharding and partitioning for large datasets.
+- Implement proper memory management and garbage collection optimization.
+- Use profiling tools to identify and resolve performance bottlenecks.
+- Implement proper monitoring and alerting for performance metrics.
+- Use CDN and edge computing for global performance optimization.
+- Implement proper data compression and optimization techniques.
+- Use proper resource monitoring and capacity planning.
+
+# Testing & Quality Assurance
+
+- Write comprehensive unit tests for all business logic and utility functions.
+- Implement integration tests for API endpoints and database interactions.
+- Use contract testing for microservices communication.
+- Implement end-to-end tests for critical user workflows.
+- Use performance testing and load testing for scalability validation.
+- Implement proper test data management and test environment setup.
+- Use mocking and stubbing for external service dependencies.
+- Implement proper test coverage reporting and quality gates.
+- Use automated testing in CI/CD pipelines with proper test isolation.
+- Implement proper test documentation and test case management.
+- Use property-based testing for robust validation of business logic.
+- Implement proper test monitoring and reporting.
+
+# Monitoring & Observability
+
+- Implement comprehensive logging with structured log formats (JSON).
+- Use distributed tracing for microservices and complex workflows.
+- Implement proper metrics collection and monitoring dashboards.
+- Use application performance monitoring (APM) tools for production insights.
+- Implement proper alerting and notification systems for critical issues.
+- Use health checks and service status monitoring.
+- Implement proper error tracking and crash reporting.
+- Use log aggregation and analysis tools (ELK stack, Splunk).
+- Implement proper business metrics and KPI monitoring.
+- Use proper incident response and escalation procedures.
+- Implement proper capacity monitoring and scaling triggers.
+- Use proper security monitoring and threat detection.
+
+# Data Management & Processing
+
+- Implement proper data validation and sanitization at all entry points.
+- Use appropriate data serialization formats (JSON, Protocol Buffers, Avro).
+- Implement proper data transformation and ETL processes.
+- Use proper data modeling and schema evolution strategies.
+- Implement proper data backup and disaster recovery procedures.
+- Use proper data archiving and retention policies.
+- Implement proper data privacy and compliance measures (GDPR, CCPA).
+- Use proper data encryption for sensitive information at rest and in transit.
+- Implement proper data quality monitoring and validation.
+- Use proper data lineage tracking and audit trails.
+- Implement proper data anonymization and pseudonymization techniques.
+- Use proper data governance and access control policies.
+
+# Deployment & DevOps
+
+- Use infrastructure as code (Terraform, CloudFormation) for consistent deployments.
+- Implement proper CI/CD pipelines with automated testing and deployment.
+- Use containerization (Docker) and orchestration (Kubernetes) for scalability.
+- Implement proper environment management (dev, staging, production).
+- Use proper configuration management and secrets management.
+- Implement proper blue-green or canary deployment strategies.
+- Use proper monitoring and rollback procedures for deployments.
+- Implement proper database migration and schema update procedures.
+- Use proper backup and disaster recovery testing.
+- Implement proper security scanning and vulnerability assessment in CI/CD.
+- Use proper performance testing and validation in staging environments.
+- Implement proper documentation and runbook maintenance.
+
+# Error Handling & Resilience
+
+- Implement proper error handling with consistent error response formats.
+- Use circuit breaker patterns for external service dependencies.
+- Implement proper retry mechanisms with exponential backoff.
+- Use bulkhead patterns for fault isolation and resource protection.
+- Implement proper timeout handling and graceful degradation.
+- Use proper dead letter queues for failed message processing.
+- Implement proper health checks and service status monitoring.
+- Use proper fallback mechanisms for critical service failures.
+- Implement proper error logging and monitoring for debugging.
+- Use proper incident response and escalation procedures.
+- Implement proper chaos engineering for resilience testing.
+- Use proper disaster recovery and business continuity planning.
+
+# Pre-Deployment Checklist
+
+## API & Service Design
+- [ ] API endpoints properly documented with OpenAPI/Swagger
+- [ ] Request/response validation implemented and tested
+- [ ] Error handling and status codes properly implemented
+- [ ] Rate limiting and throttling configured
+- [ ] Authentication and authorization mechanisms tested
+
+## Database & Data Management
+- [ ] Database schema migrations tested and rollback procedures documented
+- [ ] Database performance optimization completed
+- [ ] Data backup and recovery procedures tested
+- [ ] Data validation and sanitization implemented
+- [ ] Database security and access controls configured
+
+## Security & Compliance
+- [ ] Security scan completed with no critical vulnerabilities
+- [ ] Authentication and authorization properly implemented
+- [ ] Input validation and sanitization tested
+- [ ] Security headers and HTTPS properly configured
+- [ ] Data encryption and privacy compliance verified
+
+## Performance & Scalability
+- [ ] Performance testing completed and requirements met
+- [ ] Caching strategies implemented and tested
+- [ ] Database query optimization completed
+- [ ] Load balancing and scaling strategies configured
+- [ ] Monitoring and alerting systems configured
+
+## Monitoring & Operations
+- [ ] Logging and monitoring systems configured
+- [ ] Health checks and status endpoints implemented
+- [ ] Error tracking and alerting configured
+- [ ] Performance monitoring and metrics collection set up
+- [ ] Incident response procedures documented and tested
+
+## Deployment & DevOps
+- [ ] CI/CD pipeline tested and working correctly
+- [ ] Environment configuration and secrets management set up
+- [ ] Deployment scripts tested in staging environment
+- [ ] Rollback procedures tested and documented
+- [ ] Documentation updated and current
+
+# Backend Naming Conventions
+
+- Use camelCase for variables, functions, and method names.
+- Use PascalCase for classes, interfaces, and constructors.
+- Use UPPER_SNAKE_CASE for constants and configuration values.
+- Use kebab-case for API endpoints and URLs.
+- Use descriptive names that clearly indicate purpose and functionality.
+- Use consistent naming patterns across all backend services.
+- Use proper prefixes/suffixes for different types of resources.
+- Follow language-specific conventions and style guides.
+- Use meaningful names for database tables, columns, and indexes.
+- Use consistent naming for configuration files and environment variables.
+
+# API Response Standards
+
+- Use consistent JSON response format with proper structure.
+- Include appropriate HTTP status codes for all responses.
+- Implement proper error response format with error codes and messages.
+- Use pagination metadata for list responses.
+- Include proper content-type headers and charset specifications.
+- Implement proper CORS headers for cross-origin requests.
+- Use proper caching headers (Cache-Control, ETag, Last-Modified).
+- Include proper security headers (X-Content-Type-Options, X-Frame-Options).
+- Use proper rate limiting headers (X-RateLimit-*).
+- Include proper API versioning information in responses.
+
+By following these comprehensive backend development practices, APIs and services will achieve high performance, security, scalability, and maintainability standards.
