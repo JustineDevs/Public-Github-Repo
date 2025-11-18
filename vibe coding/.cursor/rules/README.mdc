@@ -1,0 +1,989 @@
+---
+alwaysApply: true
+description: Professional README Standards for GitHub OSS Projects - Design, Structure, and Best Practices
+globs:
+  - "README.md"
+  - "README.mdx"
+  - "*/README.md"
+---
+
+# Professional README Standards for GitHub OSS Projects
+
+This ruleset establishes comprehensive standards for creating professional, visually appealing, and effective README files for open-source projects on GitHub. A README is the front door to your project—it determines whether visitors stay to explore or leave. This guide ensures READMEs are clear, welcoming, and conversion-focused.
+
+---
+
+## Core README Principles
+
+### Purpose of a README
+
+A README serves multiple critical functions:
+
+- **First Impression**: The first item visitors see when arriving at your repository
+- **Project Elevator Pitch**: Quickly communicates what the project does and why it matters
+- **Onboarding Guide**: Provides the minimum information needed to get started
+- **Decision Tool**: Helps potential users decide if the project meets their needs
+- **Credibility**: Demonstrates professionalism and project maturity
+- **Support Reduction**: Well-written READMEs reduce support requests by pre-answering common questions
+
+According to GitHub, a README typically includes information about:
+- What the project does
+- Why the project is useful
+- How users can get started with the project
+- Where users can get help
+- Who maintains and contributes to the project
+
+### Guiding Design Principles
+
+**Clarity First**: Use clear, plain language accessible to your target audience (beginners to experts as appropriate). Define technical terms and acronyms on first use.
+
+**Visual Hierarchy**: Use consistent formatting, meaningful headings, and whitespace to guide readers through content. Make scanning easy by using lists, tables, and visual breaks.
+
+**Progressive Disclosure**: Present information in order of importance. Critical information first, detailed information later. Link to full documentation for extensive topics.
+
+**Professional Appearance**: Maintain consistent styling, proper spacing, and visual appeal. A well-formatted README signals a well-maintained project.
+
+**Mobile-Friendly**: Ensure the README displays well on mobile devices. Test rendering on GitHub and various screen sizes.
+
+---
+
+## README File Location and Recognition
+
+GitHub automatically recognizes and displays README files in the following priority order:
+
+1. `.github/README.md` (hidden directory)
+2. `README.md` (root directory) — **Recommended location**
+3. `docs/README.md` (documentation directory)
+
+**Best Practice**: Place your main README.md in the repository root for maximum visibility. This is the standard location developers expect.
+
+**Multiple READMEs**: You may create additional README files in subdirectories to document specific components or modules. Each should follow this ruleset's standards.
+
+**File Size Limit**: GitHub truncates README content beyond 500 KiB. Most projects will never reach this limit, but be aware if you embed very large content.
+
+---
+
+## README Structure and Required Sections
+
+### Section Order and Content
+
+Order matters. Visitors make quick decisions about whether to engage with your project. Present information strategically.
+
+**Recommended Section Order:**
+
+```
+1. Project Title
+2. Badges & Shields (optional but recommended)
+3. Brief Description / Tagline
+4. Table of Contents
+5. Features / Key Benefits
+6. Demo or Screenshots
+7. Quick Start / Installation
+8. Usage Examples
+9. Documentation Links
+10. Contributing
+11. License
+12. Citation (if applicable)
+13. Authors / Acknowledgments
+```
+
+### 1. Project Title
+
+**Requirements**:
+- Use H1 heading (single `#`)
+- Make it clear, descriptive, and memorable
+- Include the project name exactly as styled in official branding
+- Keep to one line when possible
+- Avoid vague titles
+
+**Example**:
+```
+# Hyperkit: AI-Powered Smart Contract Auditing & Generation Platform
+```
+
+**Not Recommended**:
+```
+# My Project
+# README
+```
+
+### 2. Badges & Shields (Optional but Recommended)
+
+Badges provide at-a-glance information about project status, health, and key metrics. Use sparingly—2-5 badges maximum.
+
+**Recommended Badge Categories**:
+
+**Build & CI Status**:
+- GitHub Actions build status
+- Test pass/fail rate
+- Deployment status
+
+**Code Quality**:
+- Code coverage percentage
+- Code quality scores
+- Linting/testing indicators
+
+**Project Information**:
+- License type
+- Version/Release
+- Last updated date
+- GitHub stars (engagement indicator)
+
+**Development Status**:
+- Active/Inactive status
+- Development stage (alpha, beta, stable)
+- Maintenance status
+
+**Social/Engagement**:
+- Downloads count
+- Contributors count
+- Activity indicators
+
+**Badge Implementation**:
+
+Use [shields.io](https://shields.io) for consistent, professional badge creation:
+
+```markdown
+<!-- Badges: start -->
+![Build Status](https://img.shields.io/github/actions/workflow/status/username/repo/ci.yml?branch=main)
+![License](https://img.shields.io/github/license/username/repo)
+![Version](https://img.shields.io/github/v/release/username/repo)
+![Code Coverage](https://img.shields.io/codecov/c/github/username/repo)
+<!-- Badges: end -->
+```
+
+**Best Practices for Badges**:
+- Keep badge count minimal (2-5 maximum)
+- Use the same badge style consistently
+- Ensure badges link to relevant information
+- Update badges automatically via CI/CD when possible
+- Wrap badges in HTML comments with `<!-- Badges: start -->` and `<!-- Badges: end -->`
+- Test that badge URLs are current and working
+
+### 3. Brief Description / Tagline
+
+**Requirements**:
+- 1-4 sentences maximum
+- Answer: "What does this project do?"
+- Be specific, not generic
+- Include the problem it solves
+- Mention primary use cases
+
+**Example**:
+```
+Hyperkit is an AI-powered platform for auditing and generating smart contracts.
+It leverages large language models to identify vulnerabilities, optimize code,
+and accelerate smart contract development across multiple blockchains.
+```
+
+**Not Recommended**:
+```
+A project for smart contracts.
+Software development tools.
+```
+
+### 4. Table of Contents
+
+**When to Include**:
+- Include if README has 5 or more major sections
+- Omit for short READMEs (under 500 words)
+- Always include for comprehensive project documentation
+
+**Format**:
+- Use markdown links to section headings
+- Use appropriate heading levels matching document hierarchy
+- Update automatically if possible (use tools like `markdown-toc`)
+- Place immediately after brief description
+
+**Example**:
+```markdown
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+- [Usage](#usage)
+- [API Reference](#api-reference)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+```
+
+**Automatic Generation**:
+```bash
+# Using npm package markdown-toc
+npm install -g markdown-toc
+markdown-toc -i README.md
+```
+
+### 5. Features & Key Benefits
+
+**Purpose**: Highlight what makes your project valuable and different.
+
+**Format**:
+- Use unordered bullet list (5-10 items maximum)
+- Start each bullet with strong action verb or key noun
+- Include emoji strategically (1 per section maximum) for visual break
+- Be specific about capabilities, not generic claims
+- Focus on user benefits, not technical implementation
+
+**Example**:
+```markdown
+## Features
+
+- 🔍 **Automated Vulnerability Detection** - Scans smart contracts for security issues using advanced ML models
+- ⚡ **Multi-Chain Support** - Deploy across Ethereum, Polygon, Avalanche, and more
+- 🎯 **Code Optimization** - Automatically suggests gas optimizations and refactoring
+- 🧪 **Testing Integration** - Generate unit tests alongside audit reports
+- 📊 **Visual Reports** - Clear, actionable vulnerability reports with severity ratings
+- 🔄 **Cross-Chain Bridges** - Built-in support for token bridges and multi-chain protocols
+```
+
+**Not Recommended**:
+```markdown
+- Good features
+- Nice performance
+- Works well
+```
+
+### 6. Demo or Screenshots
+
+**Purpose**: Show, don't tell. Visual content dramatically increases engagement.
+
+**Best Practices**:
+
+**Screenshots**:
+- Include 2-4 high-quality screenshots showing key features
+- Crop to essential UI elements only (not entire monitor screen)
+- Add captions or labels explaining what viewers see
+- Store in repository in `assets/images/` or `docs/images/` directory
+- Use relative paths for image links
+- Use HTML `<img>` tag for size control instead of markdown
+
+**GIFs**:
+- Show key workflows or interactions (30-60 seconds maximum)
+- Use high quality (but reasonable file size)
+- Include alternative text
+- Label clearly (e.g., "Demo: Smart Contract Auditing Workflow")
+
+**Diagrams**:
+- Include architecture diagrams using ASCII art, Mermaid, or hosted images
+- Show component relationships
+- Explain data flow visually
+
+**Image Implementation**:
+
+```markdown
+## Demo
+
+### Smart Contract Analysis in Action
+
+<img src="assets/images/audit-demo.png" alt="Hyperkit audit interface showing vulnerability detection" width="800">
+
+**Features demonstrated**:
+- Real-time vulnerability scanning
+- Severity-based categorization
+- Code suggestion recommendations
+```
+
+**File Organization**:
+```
+repository-root/
+├── README.md
+├── assets/
+│   └── images/
+│       ├── dashboard.png
+│       ├── audit-flow.gif
+│       └── architecture.png
+```
+
+### 7. Quick Start / Installation
+
+**Purpose**: Minimize friction for new users to get started immediately.
+
+**Requirements**:
+- Assume minimal prior knowledge but not zero knowledge
+- Keep to 5-10 steps maximum
+- Include expected output or success indicator
+- Link to detailed setup guide for complex projects
+- Provide platform-specific instructions if applicable
+
+**Standard Structure**:
+
+```markdown
+## Quick Start
+
+### Prerequisites
+
+- Node.js 18.0 or higher
+- npm 8.0 or higher
+- Git
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/username/hyperkit.git
+   cd hyperkit
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables**
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+4. **Start development server**
+   ```bash
+   npm run dev
+   ```
+
+5. **Verify installation**
+   Open http://localhost:3000 in your browser. You should see the Hyperkit dashboard.
+
+For detailed setup instructions, see [Installation Guide](./docs/installation.md).
+```
+
+**Best Practices**:
+- Show exact commands users can copy-paste
+- Explain each step briefly
+- Show expected output: "You should see..."
+- Provide success confirmation
+- Mention common issues and solutions
+- Link to detailed documentation
+
+### 8. Usage Examples
+
+**Purpose**: Show how to use the project for common scenarios.
+
+**Requirements**:
+- Provide 2-4 clear, working examples
+- Progress from simple to complex
+- Use realistic, meaningful data (not `foo`, `bar`, `baz`)
+- Show complete code including imports
+- Include expected output or console results
+- Comment only on non-obvious lines (not line-by-line)
+
+**Example**:
+
+```markdown
+## Usage
+
+### Basic Smart Contract Audit
+
+```python
+from hyperkit import SmartContractAuditor
+
+# Initialize auditor
+auditor = SmartContractAuditor(
+    model="gpt-4",
+    chains=["ethereum", "polygon"]
+)
+
+# Audit a contract
+results = auditor.audit("path/to/contract.sol")
+
+# View findings
+for finding in results.vulnerabilities:
+    print(f"[{finding.severity}] {finding.title}")
+    print(f"  Details: {finding.description}")
+```
+
+Output:
+```
+[HIGH] Unprotected reentrancy attack
+  Details: Function transfers funds before updating state...
+
+[MEDIUM] Missing input validation
+  Details: Function accepts user input without validation...
+```
+
+### Multi-Chain Deployment
+
+```bash
+hyperkit deploy \
+  --contract=./contracts/Token.sol \
+  --networks=ethereum,polygon,avalanche \
+  --report=detailed
+```
+
+### Integration with Existing Tools
+
+See [Examples Directory](./docs/examples/) for more advanced use cases.
+```
+
+### 9. Documentation Links
+
+**Purpose**: Guide users to comprehensive documentation for topics beyond the README scope.
+
+**Structure**:
+
+```markdown
+## Documentation
+
+For more information, visit:
+
+- **[User Guide](./docs/user-guide.md)** - Complete feature documentation
+- **[API Reference](./docs/api/)** - Detailed API documentation
+- **[Developer Setup](./docs/development/setup.md)** - Development environment setup
+- **[Architecture](./docs/architecture.md)** - System design and component overview
+- **[FAQ](./docs/faq.md)** - Frequently asked questions
+- **[Changelog](./CHANGELOG.md)** - Version history and updates
+```
+
+### 10. Contributing
+
+**Purpose**: Welcome and guide potential contributors.
+
+**Minimum Content**:
+
+```markdown
+## Contributing
+
+We welcome contributions! To contribute:
+
+1. **Fork** the repository
+2. **Create a feature branch** (`git checkout -b feature/amazing-feature`)
+3. **Make your changes** and commit (`git commit -m 'Add amazing feature'`)
+4. **Push to your branch** (`git push origin feature/amazing-feature`)
+5. **Open a Pull Request**
+
+For detailed contribution guidelines, see [CONTRIBUTING.md](./CONTRIBUTING.md).
+
+### Code of Conduct
+
+Please note we have a [Code of Conduct](./CODE_OF_CONDUCT.md).
+By participating, you are expected to uphold this code.
+```
+
+**Best Practices**:
+- Link to detailed CONTRIBUTING.md for full guidelines
+- Make contribution process obvious and welcoming
+- Mention code of conduct
+- Provide multiple ways to contribute (code, docs, testing, issues)
+
+### 11. License
+
+**Purpose**: Clarify intellectual property and usage rights.
+
+**Standard Format**:
+
+```markdown
+## License
+
+This project is licensed under the [MIT License](./LICENSE) - 
+see the LICENSE file for details.
+
+Contributions to this project are accepted under the same license.
+```
+
+**Recommended Licenses** (by use case):
+
+| License | Best For |
+|---------|----------|
+| **MIT** | Permissive, most popular for open source |
+| **Apache 2.0** | Commercial-friendly with patent protection |
+| **GPL-3.0** | Copyleft; ensures derived works remain open |
+| **AGPL-3.0** | Network copyleft for SaaS/cloud services |
+| **ISC** | Minimal, simple permissive license |
+
+**License File**:
+- Always include a separate `LICENSE` file in repository root
+- Use exact license text from [choosealicense.com](https://choosealicense.com)
+- Do not modify license text
+
+### 12. Citation (Optional)
+
+**When to Include**:
+- Academic or research-focused projects
+- Projects that should be cited in published work
+- Projects with published papers or documentation
+
+**Format** (BibTeX):
+
+```markdown
+## Citation
+
+If you use Hyperkit in your research, please cite:
+
+```bibtex
+@software{hyperkit2025,
+  author = {Your Name},
+  title = {Hyperkit: AI-Powered Smart Contract Auditing},
+  year = {2025},
+  url = {https://github.com/username/hyperkit}
+}
+```
+
+Or use this APA format:
+
+Your Name. (2025). Hyperkit: AI-powered smart contract auditing platform. 
+Retrieved from https://github.com/username/hyperkit
+```
+
+### 13. Authors & Acknowledgments
+
+**Purpose**: Credit creators, contributors, and inspirations. Build community.
+
+**Structure**:
+
+```markdown
+## Authors
+
+- **[Your Name](https://github.com/yourname)** - Creator and Maintainer
+- **[Contributor Name](https://github.com/contributor)** - Major Contributions
+
+## Acknowledgments
+
+Special thanks to:
+
+- [Project Inspiration](https://github.com/inspiration) for the original concept
+- [Library/Tool Name](https://github.com/library) for core functionality
+- All [contributors](./CONTRIBUTORS.md) who have helped improve this project
+
+### Contributors
+
+See [CONTRIBUTORS.md](./CONTRIBUTORS.md) for a full list of contributors.
+```
+
+---
+
+## Formatting and Styling Standards
+
+### Heading Hierarchy
+
+**Correct Structure**:
+```
+# Title (H1) — One per document
+## Major Section (H2)
+### Subsection (H3)
+#### Details (H4)
+```
+
+**Do Not**:
+- Use multiple H1 headings in one document
+- Skip heading levels (e.g., H2 → H4)
+- Use headings for styling purposes only
+
+### Lists
+
+**Unordered Lists** (bullet points):
+- Use for items without inherent order
+- Use one of: `-`, `*`, or `+` consistently
+- Do not exceed 10 items per list
+- Use for features, prerequisites, steps with alternatives
+
+**Ordered Lists** (numbered):
+- Use for step-by-step procedures
+- Use for prioritized items
+- Use for ranked lists
+- Restart numbering for each list
+- Avoid nesting more than 2 levels
+
+**Example**:
+```markdown
+### Installation Steps
+
+1. Clone the repository
+   - Using HTTPS: `git clone https://...`
+   - Using SSH: `git clone git@...`
+
+2. Install dependencies
+   ```bash
+   npm install
+   ```
+
+3. Configure environment
+   - Copy `.env.example` to `.env`
+   - Update with your settings
+```
+
+### Code Blocks
+
+**Requirements**:
+- Always specify language for syntax highlighting
+- Keep examples under 20 lines
+- Include sufficient context (imports, setup)
+- Add inline comments only for non-obvious code
+- Show both input and output when relevant
+
+**Example**:
+```markdown
+```python
+from hyperkit import SmartContractAuditor
+
+# Initialize with model and chains
+auditor = SmartContractAuditor(model="gpt-4")
+
+# Audit contract
+results = auditor.audit("contract.sol")
+```
+```
+
+**Language Identifiers**:
+- `python` - Python code
+- `javascript` or `js` - JavaScript
+- `typescript` or `ts` - TypeScript
+- `bash` or `shell` - Shell commands
+- `json` - JSON data
+- `yaml` or `yml` - YAML configuration
+- `sql` - SQL queries
+- `markdown` - Markdown content
+
+### Tables
+
+**Usage**:
+- Use for comparing features, options, or structured data
+- Include clear headers
+- Align columns consistently
+- Provide explanatory text above complex tables
+
+**Example**:
+```markdown
+### Supported Networks
+
+| Network | Mainnet | Testnet | Support Level |
+|---------|---------|---------|---------------|
+| Ethereum | ✓ | ✓ | Full |
+| Polygon | ✓ | ✓ | Full |
+| Avalanche | ✓ | ✓ | Experimental |
+```
+
+### Emphasis
+
+**Guidelines**:
+- Limit emphasis to ~10% of total text
+- Use **bold** for: UI elements, command names, key terms
+- Use *italics* for: file names, variable names, conceptual terms
+- Use `code formatting` for: code, commands, technical terminology
+- Avoid ALL CAPS for emphasis; use bold instead
+
+**Example**:
+```markdown
+Run the `npm install` command to install **dependencies**. 
+Configure your *.env* file with API keys.
+```
+
+### Relative Links
+
+**Best Practice**: Use relative links for internal documentation to support cloned repositories.
+
+**Example**:
+```markdown
+<!-- Good: relative links work in clones -->
+[Contribution Guidelines](./CONTRIBUTING.md)
+[Development Setup](./docs/development/setup.md)
+
+<!-- Avoid: absolute links may break in clones -->
+[Contribution Guidelines](https://github.com/username/repo/blob/main/CONTRIBUTING.md)
+```
+
+### Images and Media
+
+**File Organization**:
+```
+repository-root/
+├── README.md
+├── docs/
+├── src/
+└── assets/
+    ├── images/
+    │   ├── demo-screenshot.png
+    │   ├── architecture.png
+    │   └── workflow.gif
+    └── videos/ (optional)
+```
+
+**Image Implementation**:
+```markdown
+<!-- Markdown image (no size control) -->
+![Alt text describing image](./assets/images/demo.png)
+
+<!-- HTML image with size control (recommended) -->
+<img src="./assets/images/demo.png" 
+     alt="Dashboard showing smart contract audit results" 
+     width="800" 
+     height="auto">
+```
+
+**Image Specifications**:
+- Use descriptive alt text for accessibility
+- Crop to relevant content only
+- Compress images to reasonable file size
+- Use PNG for screenshots (lossless)
+- Use GIF or WebP for animations
+- Use JPG for photographs
+- Specify width; height adjusts automatically to maintain aspect ratio
+
+### Emoji Usage
+
+**Strategic Emoji Placement**:
+- Use emojis in section headers for visual break (maximum 1 per section)
+- Use emojis in feature lists for quick visual scanning
+- Avoid excessive emoji use (unprofessional appearance)
+- Ensure emoji choices are semantic and helpful
+- Support screen readers by including descriptive text
+
+**Recommended Emojis by Context**:
+```
+🚀 Launch, quick start, getting started
+📖 Documentation, guides, learning
+🔧 Configuration, setup, installation
+⚙️ Settings, configuration, advanced options
+🐛 Bugs, issues, troubleshooting
+✨ Features, highlights, new features
+📊 Analytics, metrics, data
+🔍 Search, find, discover
+⚡ Performance, speed, optimization
+🔐 Security, authentication, encryption
+🌐 Global, web, internet, multi-chain
+💡 Tips, ideas, insights
+❓ FAQ, questions, help
+📝 Notes, documentation, changelog
+```
+
+**Not Recommended**:
+- Random emoji not connected to content meaning
+- Multiple emoji per line (visual noise)
+- Emoji instead of actual descriptive text
+- Complex emoji that don't render consistently across platforms
+
+---
+
+## Professional Standards and Practices
+
+### Length and Scope
+
+**Optimal README Length**:
+- 500-2000 words (typically)
+- Longer READMEs may indicate content belongs in separate documentation
+- Shorter READMEs may not provide sufficient information
+
+**Content Boundaries**:
+- README: Project overview, quick start, basic usage, links to detailed docs
+- Separate Documentation: Detailed API docs, architecture, advanced topics
+- GitHub Wiki or Docs Site: Extensive tutorials, how-to guides, FAQs
+
+**Rule of Thumb**: If a section exceeds 200 words, consider moving it to separate documentation and linking from README.
+
+### Tone and Language
+
+**Voice**:
+- Professional yet approachable
+- Friendly but not flippant
+- Direct and clear
+- Use "you" to address readers
+- Avoid marketing hype or exaggeration
+- Be honest about limitations
+
+**Language**:
+- Use active voice when possible
+- Write in present tense for current features
+- Define technical terms before using
+- Avoid culture-specific idioms or references
+- Use "they/them" pronouns for inclusive language
+- Avoid gendered language
+
+**Example**:
+```
+✓ "You can audit smart contracts to identify vulnerabilities"
+✗ "Smart contracts get audited for things that might be wrong"
+
+✓ "Supports 5+ blockchains including Ethereum, Polygon, and Avalanche"
+✗ "We're super excited to offer blockchain support!"
+```
+
+### Accessibility
+
+**GitHub Markdown Rendering**:
+- Test README rendering on GitHub.com (not just local)
+- Ensure adequate color contrast if using color
+- Use alt text for all images
+- Use semantic headings for screen readers
+- Avoid image-only content; include text alternative
+- Test on mobile devices for responsive display
+
+**Automated Accessibility Checks**:
+- Use GitHub's built-in accessibility checker
+- Test with accessibility browser extensions
+- Run markdown linters for structure validation
+
+### Mobile Rendering
+
+- GitHub automatically renders markdown responsively
+- Avoid wide tables (>4 columns may not display well)
+- Test badges on small screens
+- Use relative widths for embedded content
+- Ensure code blocks are horizontally scrollable
+- Preview README on mobile device before publishing
+
+### Maintenance and Updates
+
+**Keep Current**:
+- Update README when project changes significantly
+- Fix broken links immediately
+- Update installation instructions after major updates
+- Refresh screenshots annually or after UI changes
+- Update badges to reflect current project state
+
+**Process**:
+- Link README updates to code changes in Git commits
+- Include README changes in Pull Requests
+- Review README during release planning
+- Use GitHub Issues to track documentation needs
+
+**Automation**:
+- Use GitHub Actions to check for broken links
+- Automate badge updates from CI/CD
+- Generate documentation from code comments where applicable
+- Periodically (quarterly) audit links and content accuracy
+
+---
+
+## README Checklist
+
+Before publishing or updating your README, verify:
+
+### Essential Content
+- [ ] Project title is clear and descriptive
+- [ ] Brief description explains what the project does
+- [ ] Installation/Quick Start instructions work and are current
+- [ ] At least 2-3 working usage examples provided
+- [ ] Links to detailed documentation included
+- [ ] Contributing guidelines linked (CONTRIBUTING.md exists)
+- [ ] License clearly specified
+
+### Formatting and Style
+- [ ] Uses clear heading hierarchy (one H1, proper heading levels)
+- [ ] Proper markdown syntax with no rendering errors
+- [ ] Consistent formatting throughout (bold, italics, code blocks)
+- [ ] All code blocks have language identifiers
+- [ ] Relative links used for internal documentation
+- [ ] All links tested and working
+- [ ] Images have descriptive alt text
+- [ ] Images compressed and stored in appropriate directory
+
+### Professional Quality
+- [ ] Uses active voice and clear language
+- [ ] No typos or grammar errors
+- [ ] Tone is professional yet approachable
+- [ ] Jargon defined or explained
+- [ ] Content scannable with good use of whitespace
+- [ ] Mobile-friendly; tested on small screens
+- [ ] Accessibility tested; alt text provided
+- [ ] Information current and accurate
+
+### Badges and Visuals
+- [ ] Badges (if used) are working and current
+- [ ] Screenshots/GIFs are high quality and relevant
+- [ ] Visual hierarchy draws attention to important info
+- [ ] No excessive emoji or visual clutter
+
+### GitHub Integration
+- [ ] README located in repository root
+- [ ] File named exactly `README.md` (case-sensitive)
+- [ ] Renders correctly on GitHub.com
+- [ ] Table of Contents (if present) links work correctly
+- [ ] All GitHub-specific features tested
+
+---
+
+## Example README Template
+
+```markdown
+# Project Title: Clear, Descriptive, Memorable
+
+<!-- Badges: start -->
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Version](https://img.shields.io/badge/version-1.0.0-brightgreen)
+<!-- Badges: end -->
+
+## Overview
+
+Brief, compelling description of what your project does (2-3 sentences). 
+Explain the problem it solves and its primary use cases.
+
+## Table of Contents
+
+- [Features](#features)
+- [Quick Start](#quick-start)
+- [Usage](#usage)
+- [Documentation](#documentation)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+- ✨ **Key Feature 1** - Brief description of benefit
+- 🚀 **Key Feature 2** - Brief description of benefit
+- 📊 **Key Feature 3** - Brief description of benefit
+
+## Quick Start
+
+### Prerequisites
+
+- List any required software or knowledge
+
+### Installation
+
+```bash
+# Step-by-step commands
+git clone https://github.com/username/project.git
+cd project
+npm install
+```
+
+## Usage
+
+```python
+# Working code example with context
+```
+
+## Documentation
+
+- [Full Documentation](./docs/)
+- [API Reference](./docs/api.md)
+- [Contributing Guide](./CONTRIBUTING.md)
+
+## Contributing
+
+We welcome contributions! See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
+
+## License
+
+Licensed under [MIT License](./LICENSE).
+
+## Acknowledgments
+
+Thanks to [inspiration/tools/people] for [reason].
+```
+
+---
+
+## Tools and Resources
+
+### Markdown Tools
+- **markdown-toc** - Automatically generate table of contents
+- **markdownlint** - Validate markdown syntax and style
+- **prettier** - Format markdown consistently
+
+### Badge Resources
+- **[shields.io](https://shields.io)** - Professional badge creation
+- **[Badgen](https://badgen.net)** - Alternative badge generator
+- **GitHub badges** - Build status, coverage, etc.
+
+### Testing and Validation
+- **[Markdown Preview](https://github.com/markdown-preview/markdown-preview-plus)** - Preview in editor
+- **GitHub Pages** - Preview README in rendered form
+- **Mobile browsers** - Test responsive rendering
+
+### Inspiration
+- Review READMEs of successful projects in your domain
+- Use templates: [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
+- Study award-winning open-source projects

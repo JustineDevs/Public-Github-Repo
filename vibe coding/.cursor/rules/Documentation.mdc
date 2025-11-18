@@ -1,0 +1,632 @@
+---
+alwaysApply: true
+description: Professional Documentation Standards for GitHub OSS Projects - Developer, Collaborator, and User Readiness
+globs:
+  - "*.md"
+  - "*.mdx"
+  - "**/*.md"
+  - "**/*.mdx"
+  - "docs/**"
+  - ".github/CONTRIBUTING.md"
+  - ".github/PULL_REQUEST_TEMPLATE.md"
+  - ".github/ISSUE_TEMPLATE/**"
+---
+
+# Professional Documentation Standards for OSS Projects
+
+This ruleset establishes comprehensive documentation practices for GitHub open-source projects, ensuring clear communication across developers, collaborators, and users. Based on the Diátaxis framework and industry best practices, this guideline balances clarity, conciseness, and structure.
+
+---
+
+## Core Documentation Principles
+
+### Keep It Clear
+
+- Use plain language accessible to your target audience
+- Define or replace acronyms and technical terms that may not be universally understood
+- Avoid jargon unless necessary; if used, define it clearly
+- Write for humans first—consider if documentation helps readers understand and maintain the code
+- Use active voice and direct language
+- Break complex concepts into digestible sections
+- Provide context before introducing technical details
+
+### Keep It Concise
+
+- Document only necessary information relevant to the majority of users
+- Avoid exhaustive coverage of edge cases; link to separate documents instead
+- Focus each document on a single topic or task
+- Remove redundant information and consolidate related content
+- Use lists, tables, and formatting to reduce word count
+- Keep paragraphs short (3-5 sentences maximum)
+- Cut out filler words and unnecessary elaboration
+
+### Keep It Structured
+
+- Place the most important information first (inverted pyramid)
+- Use clear headings and table of contents for easy scanning
+- Employ consistent text highlighting (bold for key terms, italics for emphasis)
+- Limit emphasis to approximately 10% of text to maintain impact
+- Maintain consistent styling across all documents
+- Use formatting elements (lists, code blocks, tables) strategically
+- Ensure logical flow and clear hierarchy
+
+---
+
+## Documentation Framework: Diátaxis Structure
+
+Organize all documentation into four distinct categories based on user needs:
+
+### Tutorials (Learning-Oriented)
+
+**Purpose**: Help beginners learn core concepts through practical, hands-on examples
+
+**Characteristics**:
+- Step-by-step instructions with expected outcomes
+- Assume minimal prior knowledge
+- Include complete, working examples
+- Focus on achieving a learning goal, not solving real-world problems
+- Use consistent narrative voice
+- Show what to do, not why to do it
+- Provide immediate, visible feedback
+
+**File Location**: `/docs/tutorials/` or `/docs/getting-started/`
+
+**Example Sections**:
+- Quick Start Guide
+- Installation and Setup
+- First Project Template
+- Beginner Walkthroughs
+
+### How-To Guides (Goal-Oriented)
+
+**Purpose**: Help users accomplish specific, practical tasks they know they need to do
+
+**Characteristics**:
+- Assume the reader knows the basics
+- Provide problem-solution approaches
+- Include code snippets and real-world examples
+- Focus on the specific task, not comprehensive explanation
+- Use realistic, practical data in examples
+- Link to conceptual explanations when needed
+- Address common challenges and gotchas
+
+**File Location**: `/docs/how-to/` or `/docs/guides/`
+
+**Example Sections**:
+- How to Configure X
+- How to Integrate with Y
+- How to Deploy
+- How to Troubleshoot Common Issues
+
+### Reference Documentation (Technical Specifications)
+
+**Purpose**: Provide complete technical specifications and information for lookup
+
+**Characteristics**:
+- Organized for easy searching and scanning
+- Use tables, lists, and code examples extensively
+- Include all parameters, options, and configurations
+- Document all functions, classes, modules, and APIs
+- Provide clear examples of each feature
+- Use consistent formatting and terminology
+- Update immediately when code changes
+
+**File Location**: `/docs/reference/`, `/docs/api/`, or inline code documentation
+
+**Example Sections**:
+- API Reference
+- Configuration Reference
+- CLI Command Reference
+- Architecture Documentation
+- Data Schema Reference
+
+### Explanation (Conceptual Understanding)
+
+**Purpose**: Provide background information and understanding of why things work the way they do
+
+**Characteristics**:
+- Discuss design decisions and reasoning
+- Explain underlying principles and concepts
+- Provide historical context or evolution
+- Discuss trade-offs and alternatives
+- Help readers understand the "why" not just the "how"
+- Can be more detailed and theoretical
+- Link to how-to guides and reference for practical application
+
+**File Location**: `/docs/explanations/`, `/docs/concepts/`, or `/docs/architecture/`
+
+**Example Sections**:
+- Architecture Overview
+- Design Decisions and Trade-offs
+- Conceptual Guides
+- Project History and Evolution
+
+---
+
+## Essential Documentation Files and Structure
+
+### README.md (Project Root)
+
+The README is the front door to your project. It should be the first file visitors read.
+
+**Required Sections**:
+
+1. **Project Title and Description** (3-4 sentences)
+   - Clear, concise overview of what the project does
+   - Key value proposition
+   - Primary use cases
+
+2. **Badges** (optional but recommended)
+   - Build status, license, version, downloads
+   - Should provide at-a-glance project status
+   - Keep badge count minimal (2-5 maximum)
+
+3. **Table of Contents**
+   - For READMEs longer than 5 sections
+   - Links to major sections
+   - Helps users find relevant information quickly
+
+4. **Quick Start / Installation**
+   - Minimum steps to get started
+   - Prerequisites listed clearly
+   - Assume beginner-level setup knowledge
+   - Provide expected output or confirmation
+   - Link to detailed setup guides
+
+5. **Features**
+   - Bullet list of key capabilities
+   - Highlight unique differentiators
+   - Use 5-10 bullet points maximum
+
+6. **Usage Examples**
+   - Practical, working code examples
+   - Show the most common use cases
+   - Include output examples
+   - Progressive complexity (simple to advanced)
+
+7. **Documentation Link**
+   - Clear link to full documentation
+   - Mention where to find specific types of docs
+
+8. **Contributing Guidelines Link**
+   - Link to CONTRIBUTING.md
+   - Brief note on how to get involved
+
+9. **License**
+   - License type and link to LICENSE file
+   - Or short statement of licensing approach
+
+10. **Authors/Acknowledgments** (optional)
+    - Credit main contributors or inspirations
+    - Link to CONTRIBUTORS.md if appropriate
+
+### CONTRIBUTING.md (.github/ directory)
+
+Guide for potential contributors on how to participate in the project.
+
+**Required Sections**:
+
+1. **Welcome Statement**
+   - Brief, encouraging message
+   - Types of contributions welcome (code, docs, testing, etc.)
+
+2. **Code of Conduct**
+   - Link to CODE_OF_CONDUCT.md or inline statement
+   - Ensure respectful, inclusive environment
+
+3. **Getting Started**
+   - Link to developer setup guide
+   - Development environment requirements
+   - How to find good first issues
+
+4. **Development Process**
+   - Branching strategy (GitFlow, trunk-based, etc.)
+   - Commit message conventions
+   - PR/MR process and review expectations
+   - Testing requirements before submission
+
+5. **Coding Standards**
+   - Link to style guide or inline summary
+   - Linting and formatting tools used
+   - Language-specific conventions
+
+6. **Documentation Standards**
+   - What documentation updates are needed for PRs
+   - How to update docs (docs-as-code approach)
+   - Documentation tools and processes
+
+7. **Issue Reporting**
+   - How to report bugs effectively
+   - Bug report template or checklist
+   - Security issue reporting procedure (separate from public issues)
+
+8. **Commit Message Guidelines**
+   - Conventional Commits or project-specific format
+   - Examples of good commit messages
+   - Importance of clear, descriptive messages
+
+9. **Pull Request Process**
+   - Steps for submitting a PR
+   - Required checks and approvals
+   - Expected review timeline
+   - When/how PRs get merged
+
+10. **Communication Channels**
+    - Discord, Slack, GitHub Discussions, forums
+    - Response time expectations
+    - How to ask questions
+
+11. **Recognition and Rewards**
+    - How contributors are acknowledged (CONTRIBUTORS.md, releases notes, etc.)
+    - Any bounty or reward programs
+
+### ARCHITECTURE.md or ARCHITECTURE.adoc
+
+Document system design, component relationships, and technical decisions.
+
+**Required Sections**:
+
+1. **Overview**
+   - High-level system description
+   - Key architectural decisions
+   - Technology stack overview
+
+2. **Component Diagram and Descriptions**
+   - Visual representation of major components
+   - Description of each component's responsibility
+   - Inter-component relationships and communication
+
+3. **Data Flow**
+   - How data moves through the system
+   - Database schema overview (with links to detailed schema docs)
+   - External API integrations
+
+4. **Technology Choices**
+   - Why specific technologies were chosen
+   - Trade-offs considered
+   - Dependencies and their justification
+
+5. **Deployment Architecture**
+   - Deployment targets (cloud, on-prem, etc.)
+   - Environment configurations
+   - Scaling considerations
+
+6. **Security Considerations**
+   - Authentication and authorization approach
+   - Data protection measures
+   - Known limitations and mitigations
+
+### Development Setup / Installation Guide
+
+Detailed guide for developers to set up their local environment.
+
+**Required Sections**:
+
+1. **Prerequisites**
+   - Specific software versions required
+   - Hardware requirements (if applicable)
+   - Operating system compatibility
+
+2. **Step-by-Step Setup**
+   - Clone repository command
+   - Environment variable configuration
+   - Dependency installation commands
+   - Database initialization (if applicable)
+   - Build/compilation steps
+   - Verification step (how to confirm successful setup)
+
+3. **Troubleshooting**
+   - Common setup issues and solutions
+   - Platform-specific notes (macOS, Linux, Windows)
+   - Where to get help
+
+4. **Running Tests**
+   - How to run test suite
+   - How to run specific tests
+   - Expected test output
+
+5. **Common Development Tasks**
+   - How to run locally
+   - How to build artifacts
+   - How to check code quality (linting, formatting)
+   - How to generate documentation
+
+---
+
+## Writing Best Practices
+
+### Code Documentation Standards
+
+**Inline Comments**:
+- Explain "why," not "what"—the code shows what it does
+- Avoid obvious comments that merely repeat code
+- Comment complex algorithms, business logic, and non-obvious decisions
+- Keep comments concise and current
+- Update comments when code changes
+
+**Function/Method Documentation**:
+- Document purpose, parameters, return values, and exceptions
+- Use language-specific conventions (JSDoc for JavaScript, docstrings for Python, Javadoc for Java)
+- Include usage examples for complex functions
+- Document side effects and any state modifications
+
+**Module/File Headers**:
+- Brief description of the module's purpose
+- Key responsibilities and relationships to other modules
+- Link to architecture documentation for complex modules
+
+### Code Examples
+
+- Use realistic, meaningful data (not just `foo`, `bar`, `baz`)
+- Show complete, working examples that can be copied and run
+- Provide multiple examples for different skill levels
+- Include expected output or console results
+- Highlight key lines with comments
+- Show both successful and error-handling cases when relevant
+- Keep examples focused and short (10-20 lines typically)
+
+### Naming Conventions
+
+**Consistency Across Documentation**:
+- Use the same term consistently for the same concept
+- Define non-standard terminology on first use
+- Maintain consistent capitalization and formatting for keywords
+- Use a terminology glossary for projects with complex vocabulary
+
+**File and Directory Names**:
+- Use lowercase with hyphens for readability (`setup-guide.md`, not `SetupGuide.md`)
+- Use descriptive names that indicate content (`api-reference.md`, not `ref.md`)
+- Group related docs in subdirectories (`docs/how-to/`, `docs/reference/`)
+
+### Formatting and Markdown Style
+
+**Headings**:
+- Use logical hierarchy (h1 for page title, h2 for sections, h3 for subsections)
+- Keep heading text concise and descriptive
+- Avoid using styles (bold, italics) within headings
+- Use one h1 per document
+
+**Lists**:
+- Use unordered lists for items without inherent order
+- Use ordered lists for steps, sequences, or ranked items
+- Keep list items parallel in structure
+- Avoid nesting more than two levels
+- Use 10 items or fewer per list
+
+**Code Blocks**:
+- Always specify language for syntax highlighting (```python, ```javascript, etc.)
+- Keep code examples focused and under 20 lines
+- Add comments to clarify non-obvious code
+- Include sufficient context (imports, dependencies, etc.)
+
+**Tables**:
+- Use for comparing features, options, or structured data
+- Include clear headers
+- Align columns consistently
+- Avoid more than 6-8 columns (consider reorganizing if wider)
+- Provide brief explanatory text above complex tables
+
+**Emphasis**:
+- Use **bold** for UI elements, command names, and key terms
+- Use *italics* for file names, variable names, and conceptual terms
+- Use `code formatting` for code, commands, and technical terminology
+- Limit emphasis to approximately 10% of text
+
+**Links**:
+- Use descriptive link text (not "click here" or "link")
+- Provide context for external links
+- Use relative links for internal documentation
+- Check that links remain valid
+
+### Inclusive and Professional Language
+
+- Use "you" to address readers directly
+- Avoid gender-specific pronouns; use "they/them" or restructure sentences
+- Use active voice when possible
+- Avoid culturally specific references or idioms
+- Be respectful and encouraging, especially in contribution guidelines
+- Use positive language ("you can do X" instead of "don't do Y")
+- Avoid marketing language or hype; stick to factual descriptions
+- Ensure examples and images reflect diverse perspectives
+
+---
+
+## Documentation Maintenance
+
+### Keeping Documentation Current
+
+**Automated Checks**:
+- Use GitHub Actions to check for broken links (`markdown-link-check`)
+- Integrate "Docs as Code"—version control documentation alongside code
+- Add broken link detection to CI/CD pipeline
+- Automate generation of reference documentation from code comments
+
+**Process Integration**:
+- Require documentation updates in PRs that change functionality
+- Add "docs-needed" label for tracking documentation work
+- Include documentation review in code review process
+- Make documentation updates a prerequisite for merging feature PRs
+- Link documentation changes to related code changes in commits
+
+**Version Management**:
+- Tie documentation updates to releases
+- Maintain documentation for multiple versions if supporting legacy releases
+- Use version indicators in documentation (e.g., "Available in v2.0+")
+- Archive outdated documentation separately from current docs
+
+**Update Cadence**:
+- Review documentation quarterly at minimum
+- Update examples and tutorials with each major version
+- Fix broken links and outdated instructions immediately
+- Archive old guides; don't leave outdated content visible
+
+### Documentation Review Process
+
+- Assign documentation reviews like code reviews
+- Use checklists to ensure consistency:
+  - Clarity: Is the purpose clear?
+  - Completeness: Are all steps/options covered?
+  - Accuracy: Is the information current and correct?
+  - Examples: Are examples working and realistic?
+  - Structure: Does it follow Diátaxis framework?
+  - Style: Does it follow this ruleset?
+
+---
+
+## Documentation Tools and Technologies
+
+### Recommended Markdown Tools
+
+- **Markdown Editors**: VS Code with Markdown Preview, Obsidian
+- **Link Checking**: markdown-link-check, Lychee
+- **Formatting**: Prettier, markdownlint
+- **Generation**: GitBook, MkDocs, Docusaurus, Hugo
+
+### Documentation Hosting
+
+- **GitHub Pages**: Ideal for projects living in GitHub; deploy with GitHub Actions
+- **Static Site Generators**: MkDocs, Docusaurus, Hugo for more customization
+- **Docs Platforms**: ReadTheDocs, GitBook for professional documentation
+- **Wikis**: GitHub Wikis for collaborative documentation (link from README)
+
+### AI-Assisted Documentation
+
+- Use GitHub Copilot for documentation suggestions and code examples
+- Leverage AI tools to generate initial documentation structure
+- Always review AI-generated content for accuracy and compliance with this ruleset
+- Use AI to identify gaps and undocumented code sections
+- Maintain human review and final approval of all AI-assisted documentation
+
+---
+
+## Structure Checklist for OSS Project Documentation
+
+Create these files in your repository:
+
+```
+repository-root/
+├── README.md                           # Project overview and quick start
+├── LICENSE                             # License file
+├── CONTRIBUTING.md (or .github/)       # Contribution guidelines
+├── CODE_OF_CONDUCT.md                  # Community standards
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── bug_report.md              # Bug report template
+│   │   └── feature_request.md         # Feature request template
+│   ├── PULL_REQUEST_TEMPLATE.md       # PR checklist and guidelines
+│   └── workflows/                      # GitHub Actions CI/CD
+├── docs/
+│   ├── README.md or index.md          # Documentation home/overview
+│   ├── ARCHITECTURE.md                # System design and architecture
+│   ├── getting-started/               # Tutorials and onboarding
+│   │   ├── installation.md
+│   │   ├── quick-start.md
+│   │   └── first-steps.md
+│   ├── how-to/                        # Goal-oriented guides
+│   │   ├── configure-x.md
+│   │   ├── integrate-y.md
+│   │   └── troubleshooting.md
+│   ├── reference/                     # Technical specifications
+│   │   ├── api-reference.md
+│   │   ├── configuration.md
+│   │   └── cli-commands.md
+│   ├── explanations/                  # Conceptual understanding
+│   │   ├── design-decisions.md
+│   │   ├── concepts.md
+│   │   └── glossary.md
+│   ├── development/                   # Developer information
+│   │   ├── setup.md                   # Local development setup
+│   │   ├── testing.md
+│   │   ├── debugging.md
+│   │   └── code-style.md
+│   └── SECURITY.md                    # Security policy and reporting
+├── CHANGELOG.md                        # Release notes and changes
+└── CONTRIBUTORS.md                     # Contributors and acknowledgments
+```
+
+---
+
+## Enforcement and Quality Metrics
+
+### Linting and Formatting
+
+- Use markdownlint to enforce markdown style consistency
+- Use Prettier for automatic formatting (if applicable)
+- Integrate linting into pre-commit hooks and CI/CD pipelines
+- Maintain a `.markdownlintrc` file with project-specific rules
+
+### Documentation Quality Checklist
+
+Before merging documentation:
+
+- [ ] Follows Diátaxis category (Tutorial/How-To/Reference/Explanation)
+- [ ] Purpose is clear in the first paragraph
+- [ ] Uses plain language appropriate for target audience
+- [ ] Contains at least one concrete example
+- [ ] Links are working and point to current information
+- [ ] Follows consistent formatting and style
+- [ ] Includes a table of contents if longer than 5 sections
+- [ ] Code examples are complete and executable
+- [ ] Related documentation is cross-linked
+- [ ] No outdated or broken references
+- [ ] Matches tone and voice of existing documentation
+
+---
+
+## Language and Tone Guidelines
+
+**Professional and Approachable**:
+- Be friendly but professional
+- Use clear, conversational language
+- Avoid corporate jargon and overly technical terms unless necessary
+- Explain technical concepts in context before using shorthand
+
+**Confident but Honest**:
+- Acknowledge limitations and known issues
+- Suggest workarounds when full solutions aren't available
+- Be clear about what's stable versus experimental
+- Document deprecations and migration paths clearly
+
+**Inclusive**:
+- Use "we" when referring to the project community
+- Acknowledge contributors and their work
+- Create welcoming, non-judgmental documentation
+- Provide multiple pathways for different skill levels
+
+---
+
+## Documentation as Code (Docs as Code) Practice
+
+### Principles
+
+- Treat documentation like source code
+- Version control all documentation
+- Review documentation changes in PRs like code changes
+- Test documentation (broken links, outdated examples)
+- Automate documentation generation where possible
+- Use plain text formats (Markdown, AsciiDoc) not proprietary formats
+- Keep documentation in the same repository as code when practical
+
+### Workflow
+
+1. Create a documentation-related branch for changes
+2. Make documentation changes in markdown files
+3. Submit PR for review with documentation-specific checklist
+4. Receive feedback from documentation and domain experts
+5. Iterate on feedback
+6. Merge when approved
+7. Documentation builds and deploys automatically via CI/CD
+
+---
+
+## Final Notes
+
+This ruleset should be adapted to your project's specific needs. Tailor it by:
+
+- Adding project-specific sections or examples
+- Adjusting terminology to match your project's domain
+- Extending with language-specific documentation conventions
+- Creating templates for common documentation types
+- Building custom CI/CD checks for your documentation
+
+Documentation is an ongoing commitment. Treat it with the same rigor and care as your codebase. Good documentation reduces support burden, increases adoption, improves collaboration, and honors your users' time and intelligence.
