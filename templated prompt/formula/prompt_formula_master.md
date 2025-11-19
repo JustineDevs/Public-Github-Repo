@@ -1,0 +1,1 @@
+Role[First] + Task [Mandatory] + Context [Important] + Exemplar [Important] + Persona [Nice-to-haves] + Format [Nice-to-haves]+ Tone [Nice-to-haves]

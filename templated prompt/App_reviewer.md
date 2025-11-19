@@ -1,0 +1,1 @@
+Once you have your initial app, select Discuss mode and ask: “Review my application so far. Based on my desired user journey and description, tell me which parts are fully built, which are stubbed, and which are missing. Don’t make changes yet.

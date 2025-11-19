@@ -42,6 +42,25 @@ Key IEEE Standards to Follow:
 - Margins: Top/Bottom 19mm, Left/Right 17.5mm
 
 Reference Structure for Output:
+- [50-100 words overview of problem, approach, and key findings]
+- [Clear definition of the challenge being addressed]
+- [Why this problem matters to the industry/field]
+- [Specific goals of the whitepaper]
+- [Overview of current state-of-the-art]
+- [Market/technical context]
+- [What this whitepaper addresses that others don't]
+- [High-level system design]
+- [Technical specifications and procedures]
+- [Breakdown of critical elements]
+- [Data-driven results with tables/figures]
+- [Non-quantitative findings and observations]
+- [Performance vs. alternatives or benchmarks]
+- [What the findings mean]
+- [Real-world value and use cases]
+- [Honest assessment of constraints and challenges]
+- [Next steps and open questions]
+- [Synthesis of findings and call-to-action]
+- [IEEE-style numbered citations]
 
 Example Citation Format (IEEE):
 [1] Author, A. A., & Author, B. B. (Year). Title of article. *Journal Name*, Volume(Issue), Pages. https://doi.org/xxxxx
