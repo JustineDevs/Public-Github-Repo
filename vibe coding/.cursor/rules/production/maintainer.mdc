@@ -102,3 +102,11 @@ Clear contributor instructions
 ✅ Squash (preferred - clean history)
 ✅ Rebase (linear commits)
 ❌ Merge commit (messy history)
+
+**Tell me your repo type** (Node.js, Python, monorepo, etc.) and I will generate:
+1. Complete .github/workflows/ CI/CD setup
+2. package.json + Makefile scripts  
+3. Branch protection rules
+4. PR templates + CODEOWNERS
+5. README contributor guide
+6. Local setup: "npm ci && npm test" verified
