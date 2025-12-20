@@ -13,6 +13,10 @@ alwaysApply: true
 - Use descriptive, intention-revealing names for variables, functions, classes, etc.
 - Avoid vague or misleading names to improve readability and maintainability.
 - Each function or module should have one clear purpose, following Single Responsibility Principle (SRP).
+- **Prioritize simplicity in code logic** - Write straightforward, easy-to-understand code over clever or complex solutions.
+- **Minimize comments in code logic** - Code should be self-explanatory through clear naming and structure.
+- **Keep comments short and purposeful** - Only comment when necessary to explain "why", never "what". If code needs explanation, refactor it instead.
+- **Remove all unnecessary comments** - Delete comments that simply restate what the code does. Let the code speak for itself.
 - Write code that clearly expresses intent to minimize comments; comment "why", not "what".
 - Replace magic numbers or strings with named constants for clarity.
 - Organize code into layers or modules (routes, controllers, services, models).
