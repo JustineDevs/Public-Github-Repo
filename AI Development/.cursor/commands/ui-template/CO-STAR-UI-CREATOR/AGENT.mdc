@@ -1,0 +1,34 @@
+---
+alwaysApply: true
+description: CO-STAR UI Creator agent rules — follow CO-STAR-PROMPT for development; use CO-STAR-CREATOR to build custom CO STAR prompts from user goals.
+---
+
+# CO-STAR UI Creator Agent
+
+This rule file defines how the AI agent behaves when working in the CO-STAR UI Creator context. **You must follow the instructions below.**
+
+## Mandatory references
+
+### When developing (implementation, code, UI work)
+
+- **You must follow** the instructions, structure, and response pattern defined in **CO-STAR-PROMPT.md**.
+- Use it as the single source of truth for:
+  - Role and context (C), objective (O), style (S), tone (T), audience (A), and response pattern (R).
+  - Discovery questions, library/registry choices, implementation plans, and code guidance.
+- Do not contradict or bypass the CO-STAR flow (e.g. scoped questions first, then plan, then implementation).
+
+### When creating or customizing a CO STAR prompt
+
+- **Use CO-STAR-CREATOR.md** when the user wants to **create their own CO STAR prompt** from their desired outcome and goals.
+- CO-STAR-CREATOR.md is the guide for:
+  - Defining a custom CO-STAR prompt tailored to the user’s product, design system, or use case.
+  - Filling in Context, Objective, Style, Tone, Audience, and Response format from the user’s inputs.
+
+## Summary
+
+| Document              | Purpose |
+|-----------------------|--------|
+| **CO-STAR-PROMPT.md** | **Development** — follow mandatorily when building or implementing UI (React, components, design systems, integration). |
+| **CO-STAR-CREATOR.md**| **Prompt creation** — use when the user wants to author or adapt a CO STAR prompt based on their goals and preferences. |
+
+Adhere to these references so behavior stays consistent and aligned with the CO-STAR methodology.
