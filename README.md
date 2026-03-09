@@ -45,16 +45,18 @@ Browse repositories by category:
 |----------|-------------|------|
 | [MCP Tutorial](mcp/mcp-tutorial.md) | YouTube tutorials for Model Context Protocol learning | Markdown |
 
-### Vibe Coding & Claude Agents
+### AI Development
 
 | Resource | Description | Type |
 |----------|-------------|------|
-| [Claude Agent Examples](vibe%20coding/.claude/agent-examples/) | Collection of Claude AI agent examples and templates | Local Directory |
-| [Vercel AI SDK v5 Expert](vibe%20coding/.claude/agent-examples/vercel-ai-sdk-v5-expert.md) | Expert agent for Vercel AI SDK v5 development | Markdown |
-| [Shadcn UI Expert](vibe%20coding/.claude/agent-examples/shadcn-ui-expert.md) | Expert agent for Shadcn UI component library | Markdown |
-| [Frontend Architecture Expert](vibe%20coding/.claude/agent-examples/shadcn-frontend-architecture.md) | Expert agent for frontend architecture patterns | Markdown |
-| [MCP Expert](vibe%20coding/.claude/agent-examples/overall-mcp-expert.md) | Expert agent for Model Context Protocol | Markdown |
-| [Claude Documentation](vibe%20coding/.claude/claude.md) | Claude AI integration and usage documentation | Markdown |
+| [AI Development](AI%20Development/README.md) | Prompt engineering, AI agents, Cursor rules, and CO-STAR UI Creator | Directory |
+| [CO-STAR UI Creator](AI%20Development/.cursor/command/ui-template/CO-STAR-UI-CREATOR/README.md) | Plug-and-play React/UI prompt system; invoke `/ui` or `/ui.md` in Cursor | Markdown |
+| [Claude Agent Examples](AI%20Development/.claude/agent-examples/) | Claude AI agent examples and templates | Local Directory |
+| [Vercel AI SDK v5 Expert](AI%20Development/.claude/agent-examples/vercel-ai-sdk-v5-expert.md) | Expert agent for Vercel AI SDK v5 development | Markdown |
+| [Shadcn UI Expert](AI%20Development/.claude/agent-examples/shadcn-ui-expert.md) | Expert agent for Shadcn UI component library | Markdown |
+| [Frontend Architecture Expert](AI%20Development/.claude/agent-examples/shadcn-frontend-architecture.md) | Expert agent for frontend architecture patterns | Markdown |
+| [MCP Expert](AI%20Development/.claude/agent-examples/overall-mcp-expert.md) | Expert agent for Model Context Protocol | Markdown |
+| [Claude Documentation](AI%20Development/.claude/claude.md) | Claude AI integration and usage documentation | Markdown |
 | [Concept and Terms Frontend](Concept%20and%20Terms%20Frontend/) | Frontend concepts, terms, and UI components documentation | Directory |
 
 ## 🚀 Getting Started
