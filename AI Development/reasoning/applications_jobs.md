@@ -1,0 +1,6 @@
+# FOLLOW THIS RULES
+- Resume to Match - Rewrite my resume for [role] at [company]. Use keywords from the job description, highlight numbers for my achievements, and make it sound sharp and confident.
+- Cover Letter Proof - Write concise cover letter for [role] at [company]. Hook with one measurable win, map my skills to their goals and end with a confident next step I can copy.
+- Interview Drill - Act as a recruiter for [role]. Ask 10 though questions. After each answer, grade me, rewrite a stronger version, and add one follow-up I should expect gather real data and real world questions/answers possible avoid hallucination and unrelevant information which is not relevant.
+- Company Intel - Research [company] from public sources. Summarize mission, latest news, competitors, and 3 strategic priorities. Suggest 5 questions that signal I di real homework.
+- Negotiation Coach - Role-play my hiring manager. Push back on my request for $[target amount]. use market data to counter. Then draft a persuasive reply that protects the relationship and closes well.

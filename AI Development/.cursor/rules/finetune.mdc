@@ -1,0 +1,257 @@
+---
+description: AI Model Fine-Tuning Practices and Machine Learning Standards
+globs:
+  - "**/*.py"
+  - "**/*.ipynb"
+  - "**/*.json"
+  - "**/*.yaml"
+  - "**/*.yml"
+  - "**/data/**"
+  - "**/models/**"
+  - "**/training/**"
+  - "**/finetune/**"
+  - "**/*.pt"
+  - "**/*.pth"
+  - "**/*.h5"
+  - "**/*.pkl"
+alwaysApply: true
+---
+
+# Fine-Tuning Implementation Techniques
+
+- Use proper data preprocessing and cleaning techniques for high-quality training data.
+- Implement proper data augmentation strategies to increase dataset diversity and robustness.
+- Use proper train/validation/test splits with appropriate stratification for balanced evaluation.
+- Implement proper hyperparameter tuning and optimization strategies.
+- Use proper learning rate scheduling and optimization algorithms for stable training.
+- Implement proper early stopping and model checkpointing to prevent overfitting.
+- Use proper gradient clipping and normalization techniques for stable training.
+- Implement proper batch size optimization and memory management for efficient training.
+- Use proper model architecture selection and transfer learning strategies.
+- Implement proper regularization techniques (dropout, weight decay, batch normalization).
+- Use proper loss function selection and custom loss implementation where needed.
+- Implement proper evaluation metrics and validation strategies for model assessment.
+
+# Data Management & Preprocessing
+
+- Implement proper data validation and quality assessment for training datasets.
+- Use proper data cleaning and preprocessing pipelines for consistent data quality.
+- Implement proper data augmentation techniques to increase dataset size and diversity.
+- Use proper data versioning and lineage tracking for reproducible experiments.
+- Implement proper data privacy and security measures for sensitive datasets.
+- Use proper data storage and retrieval optimization for large-scale datasets.
+- Implement proper data balancing and stratification techniques for fair model training.
+- Use proper data annotation and labeling quality control mechanisms.
+- Implement proper data splitting strategies for robust model evaluation.
+- Use proper data caching and preprocessing optimization for training efficiency.
+- Implement proper data monitoring and drift detection for production datasets.
+- Use proper data documentation and metadata management for dataset understanding.
+
+# Model Architecture & Training
+
+- Design appropriate model architectures for specific fine-tuning tasks and requirements.
+- Implement proper transfer learning strategies using pre-trained models effectively.
+- Use proper model initialization and weight initialization techniques.
+- Implement proper model compression and quantization for deployment optimization.
+- Use proper model ensemble techniques and multi-model strategies.
+- Implement proper model versioning and experiment tracking for reproducibility.
+- Use proper model checkpointing and resume training capabilities.
+- Implement proper model validation and cross-validation strategies.
+- Use proper model selection and hyperparameter optimization techniques.
+- Implement proper model monitoring and performance tracking during training.
+- Use proper model debugging and visualization techniques for understanding behavior.
+- Implement proper model documentation and architecture documentation.
+
+# Hyperparameter Optimization
+
+- Implement proper hyperparameter search strategies (grid search, random search, Bayesian optimization).
+- Use proper hyperparameter validation and cross-validation techniques.
+- Implement proper automated hyperparameter tuning with appropriate search spaces.
+- Use proper hyperparameter sensitivity analysis and importance ranking.
+- Implement proper hyperparameter logging and tracking for experiment management.
+- Use proper hyperparameter constraints and bounds for realistic optimization.
+- Implement proper multi-objective optimization for complex performance trade-offs.
+- Use proper hyperparameter warmup and learning rate scheduling strategies.
+- Implement proper hyperparameter transfer learning and meta-learning approaches.
+- Use proper hyperparameter monitoring and early stopping for optimization efficiency.
+- Implement proper hyperparameter documentation and best practices sharing.
+- Use proper hyperparameter versioning and experiment reproducibility.
+
+# Training Infrastructure & Performance
+
+- Implement proper distributed training strategies for large-scale model training.
+- Use proper GPU/TPU utilization and memory optimization techniques.
+- Implement proper training pipeline optimization and parallel processing.
+- Use proper training monitoring and resource utilization tracking.
+- Implement proper training checkpointing and fault tolerance mechanisms.
+- Use proper training data loading and preprocessing optimization.
+- Implement proper training pipeline automation and CI/CD integration.
+- Use proper training environment management and containerization.
+- Implement proper training cost optimization and resource allocation strategies.
+- Use proper training scalability and elastic scaling capabilities.
+- Implement proper training security and access control mechanisms.
+- Use proper training documentation and operational runbooks.
+
+# Evaluation & Validation
+
+- Implement proper evaluation metrics selection for specific fine-tuning tasks.
+- Use proper cross-validation and holdout validation strategies for robust evaluation.
+- Implement proper model comparison and statistical significance testing.
+- Use proper evaluation data preparation and test set management.
+- Implement proper evaluation automation and continuous evaluation pipelines.
+- Use proper evaluation visualization and reporting for stakeholder communication.
+- Implement proper evaluation bias detection and fairness assessment.
+- Use proper evaluation error analysis and failure mode investigation.
+- Implement proper evaluation monitoring and drift detection for production models.
+- Use proper evaluation documentation and metric interpretation guides.
+- Implement proper evaluation reproducibility and experiment tracking.
+- Use proper evaluation security and data privacy protection.
+
+# Model Deployment & Production
+
+- Implement proper model serialization and format conversion for deployment.
+- Use proper model serving infrastructure and API development for production use.
+- Implement proper model versioning and A/B testing capabilities for production deployment.
+- Use proper model monitoring and performance tracking in production environments.
+- Implement proper model rollback and disaster recovery procedures.
+- Use proper model security and access control for production deployment.
+- Implement proper model scaling and load balancing for production workloads.
+- Use proper model documentation and API documentation for production users.
+- Implement proper model compliance and regulatory requirements for production use.
+- Use proper model maintenance and update procedures for production systems.
+- Implement proper model cost optimization and resource management for production.
+- Use proper model incident response and troubleshooting procedures.
+
+# Security & Privacy
+
+- Implement proper data privacy protection and anonymization techniques.
+- Use proper differential privacy and federated learning for privacy-preserving training.
+- Implement proper model security and adversarial attack protection.
+- Use proper access control and authentication for training and model resources.
+- Implement proper data encryption and secure storage for sensitive datasets.
+- Use proper model watermarking and intellectual property protection.
+- Implement proper audit logging and compliance monitoring for regulated environments.
+- Use proper secure multi-party computation for collaborative training.
+- Implement proper model explainability and interpretability for transparency.
+- Use proper bias detection and fairness assessment for ethical AI practices.
+- Implement proper data retention and deletion policies for compliance.
+- Use proper security incident response and vulnerability management.
+
+# Testing & Quality Assurance
+
+- Write comprehensive unit tests for fine-tuning pipelines and model components.
+- Implement proper integration tests for end-to-end fine-tuning workflows.
+- Use proper model testing and validation strategies for quality assurance.
+- Implement proper data quality testing and validation for training datasets.
+- Use proper performance testing and benchmarking for model efficiency.
+- Implement proper security testing and vulnerability assessment for model systems.
+- Use proper regression testing and compatibility testing for model updates.
+- Implement proper stress testing and load testing for production deployment.
+- Use proper A/B testing and experimentation for model performance validation.
+- Implement proper test data management and test environment setup.
+- Use proper test automation and CI/CD integration for continuous testing.
+- Implement proper test documentation and quality assurance procedures.
+
+# Monitoring & Observability
+
+- Implement comprehensive logging for fine-tuning processes and model training.
+- Use proper metrics collection and monitoring dashboards for training progress.
+- Implement proper alerting and notification systems for training issues.
+- Use proper distributed tracing for complex fine-tuning workflows.
+- Implement proper model performance monitoring and drift detection.
+- Use proper resource utilization monitoring and cost tracking.
+- Implement proper error tracking and debugging capabilities for training issues.
+- Use proper experiment tracking and model versioning for reproducibility.
+- Implement proper business metrics and KPI monitoring for model impact.
+- Use proper incident response and escalation procedures for training failures.
+- Implement proper capacity monitoring and scaling triggers for training resources.
+- Use proper security monitoring and threat detection for model systems.
+
+# Pre-Deployment Checklist
+
+## Data & Preprocessing
+- [ ] Data quality assessment completed and issues resolved
+- [ ] Data preprocessing pipeline tested and validated
+- [ ] Data augmentation strategies implemented and tested
+- [ ] Data privacy and security measures implemented
+- [ ] Data versioning and lineage tracking configured
+
+## Model Training & Architecture
+- [ ] Model architecture selected and validated for task requirements
+- [ ] Transfer learning strategy implemented and tested
+- [ ] Hyperparameter optimization completed and validated
+- [ ] Training pipeline tested and optimized for performance
+- [ ] Model checkpointing and resume capabilities implemented
+
+## Evaluation & Validation
+- [ ] Evaluation metrics selected and implemented
+- [ ] Cross-validation and holdout validation completed
+- [ ] Model performance meets requirements and benchmarks
+- [ ] Bias detection and fairness assessment completed
+- [ ] Error analysis and failure mode investigation completed
+
+## Security & Compliance
+- [ ] Security scan completed with no critical vulnerabilities
+- [ ] Data privacy and protection measures implemented
+- [ ] Access controls and authentication configured
+- [ ] Audit logging and compliance monitoring enabled
+- [ ] Model security and adversarial protection implemented
+
+## Deployment & Production
+- [ ] Model serialization and deployment pipeline tested
+- [ ] Model serving infrastructure configured and tested
+- [ ] Model monitoring and performance tracking implemented
+- [ ] Model versioning and A/B testing capabilities configured
+- [ ] Rollback and disaster recovery procedures tested
+
+## Documentation & Operations
+- [ ] Model documentation and API documentation completed
+- [ ] Training and deployment procedures documented
+- [ ] Monitoring and alerting systems configured
+- [ ] Incident response procedures documented and tested
+- [ ] Team training and knowledge transfer completed
+
+# Fine-Tuning Naming Conventions
+
+- Use snake_case for Python variables, functions, and file names.
+- Use PascalCase for class names and model architectures.
+- Use UPPER_SNAKE_CASE for constants and configuration values.
+- Use descriptive names that clearly indicate model purpose and functionality.
+- Use consistent naming patterns across all fine-tuning code and experiments.
+- Use proper prefixes/suffixes for different types of models and experiments.
+- Follow framework-specific conventions (PyTorch, TensorFlow, Hugging Face).
+- Use meaningful names for data files, model checkpoints, and experiment outputs.
+- Use consistent naming for configuration files and hyperparameter settings.
+- Use proper versioning and timestamping for model artifacts and experiments.
+
+# Experiment Management & Reproducibility
+
+- Implement proper experiment tracking and versioning for all fine-tuning experiments.
+- Use proper configuration management and environment setup for reproducible experiments.
+- Implement proper random seed management and deterministic training procedures.
+- Use proper dependency management and containerization for consistent environments.
+- Implement proper data versioning and lineage tracking for training datasets.
+- Use proper model artifact management and storage for experiment outputs.
+- Implement proper experiment documentation and result reporting.
+- Use proper experiment comparison and analysis tools for model selection.
+- Implement proper experiment sharing and collaboration mechanisms.
+- Use proper experiment monitoring and progress tracking for long-running experiments.
+- Implement proper experiment cleanup and resource management.
+- Use proper experiment security and access control for sensitive research.
+
+# Model Optimization & Efficiency
+
+- Implement proper model compression techniques (pruning, quantization, distillation).
+- Use proper model optimization and acceleration techniques for deployment.
+- Implement proper memory optimization and efficient data loading strategies.
+- Use proper batch size optimization and gradient accumulation techniques.
+- Implement proper learning rate optimization and adaptive learning rate strategies.
+- Use proper model architecture optimization and neural architecture search.
+- Implement proper training efficiency optimization and parallel processing.
+- Use proper model serving optimization and inference acceleration.
+- Implement proper model size optimization and storage efficiency.
+- Use proper training cost optimization and resource utilization.
+- Implement proper model performance optimization and latency reduction.
+- Use proper model accuracy optimization and performance tuning.
+
+By following these comprehensive fine-tuning practices, AI models will achieve high performance, reliability, security, and maintainability standards for production deployment.
