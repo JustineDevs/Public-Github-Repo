@@ -50,7 +50,7 @@ Browse repositories by category:
 | Resource | Description | Type |
 |----------|-------------|------|
 | [AI Development](AI%20Development/README.md) | Prompt engineering, AI agents, Cursor rules, and CO-STAR UI Creator | Directory |
-| [CO-STAR UI Creator](AI%20Development/.cursor/command/ui-template/CO-STAR-UI-CREATOR/README.md) | Plug-and-play React/UI prompt system; invoke `/ui` or `/ui.md` in Cursor | Markdown |
+| [CO-STAR UI Creator](AI%20Development/.cursor/commands/ui-template/CO-STAR-UI-CREATOR/README.md) | Plug-and-play React/UI prompt system; invoke `/ui` or `/ui.md` in Cursor | Markdown |
 | [Claude Agent Examples](AI%20Development/.claude/agent-examples/) | Claude AI agent examples and templates | Local Directory |
 | [Vercel AI SDK v5 Expert](AI%20Development/.claude/agent-examples/vercel-ai-sdk-v5-expert.md) | Expert agent for Vercel AI SDK v5 development | Markdown |
 | [Shadcn UI Expert](AI%20Development/.claude/agent-examples/shadcn-ui-expert.md) | Expert agent for Shadcn UI component library | Markdown |
