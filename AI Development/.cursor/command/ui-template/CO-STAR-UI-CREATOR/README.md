@@ -6,43 +6,43 @@ A structured prompt system for building React/Next.js UIs with modern component 
 
 ## Plug & play — copy, paste, go
 
-**1.** `cd` into your **project root** (the repo where you want `/ui` to work).  
-**2.** Copy-paste the block for your OS. **Edit only the first line** (path to this repo).  
-**3.** Run it. You’re done.
+### Just get the folder (fastest & simplest)
+1. **Open your terminal** (Bash or PowerShell) **inside your project folder** (where you want `.cursor/` to live).
+2. **Copy and paste** one block below and run it.
 
-### Linux / macOS (Bash)
+**Mac / Linux (Bash):**
 
 ```bash
-REPO_PATH="/path/to/Public-Github-Repo/AI Development/.cursor/command/ui-template/CO-STAR-UI-CREATOR"
-mkdir -p .cursor/command .cursor/rules && cp "$REPO_PATH/ui.md" .cursor/command/ && cp -r "$REPO_PATH" .cursor/rules/CO-STAR-UI-CREATOR
+# 1. Download only that specific folder
+git clone --depth 1 --filter=blob:none --sparse https://github.com/JustineDevs/Public-Github-Repo.git
+cd Public-Github-Repo
+git sparse-checkout set "AI Development/.cursor/command/ui-template/CO-STAR-UI-CREATOR"
+# 2. Move files to your project and clean up
+mkdir -p ../.cursor/command ../.cursor/rules
+cp "AI Development/.cursor/command/ui-template/CO-STAR-UI-CREATOR/ui.md" "../.cursor/command/"
+cp -r "AI Development/.cursor/command/ui-template/CO-STAR-UI-CREATOR" "../.cursor/rules/"
+cd .. && rm -rf Public-Github-Repo
 ```
 
-### Windows (PowerShell)
+**Windows (PowerShell):**
 
 ```powershell
-$REPO_PATH = "C:\path\to\Public-Github-Repo\AI Development\.cursor\command\ui-template\CO-STAR-UI-CREATOR"
-New-Item -ItemType Directory -Force -Path ".cursor\command", ".cursor\rules" | Out-Null; Copy-Item "$REPO_PATH\ui.md" ".cursor\command\"; Copy-Item -Recurse $REPO_PATH ".cursor\rules\CO-STAR-UI-CREATOR"
+# 1. Download only that specific folder
+git clone --depth 1 --filter=blob:none --sparse https://github.com/JustineDevs/Public-Github-Repo.git
+cd Public-Github-Repo
+git sparse-checkout set "AI Development/.cursor/command/ui-template/CO-STAR-UI-CREATOR"
+# 2. Move files to your project and clean up
+New-Item -ItemType Directory -Force -Path "..\.cursor\command", "..\.cursor\rules" | Out-Null
+Copy-Item "AI Development\.cursor\command\ui-template\CO-STAR-UI-CREATOR\ui.md" "..\.cursor\command\"
+Copy-Item -Recurse "AI Development\.cursor\command\ui-template\CO-STAR-UI-CREATOR" "..\.cursor\rules\"
+cd ..; Remove-Item -Recurse -Force Public-Github-Repo
 ```
 
-### Optional: install from repo root into another project
+**What this does:**
 
-Run from the **repo root**; set `MY_PROJECT` to the project where you want CO-STAR.
-
-**Bash:**
-```bash
-MY_PROJECT="/path/to/my-project"
-mkdir -p "$MY_PROJECT/.cursor/command" "$MY_PROJECT/.cursor/rules"
-cp "AI Development/.cursor/command/ui-template/CO-STAR-UI-CREATOR/ui.md" "$MY_PROJECT/.cursor/command/"
-cp -r "AI Development/.cursor/command/ui-template/CO-STAR-UI-CREATOR" "$MY_PROJECT/.cursor/rules/"
-```
-
-**PowerShell:**
-```powershell
-$MY_PROJECT = "C:\path\to\my-project"
-New-Item -ItemType Directory -Force -Path "$MY_PROJECT\.cursor\command", "$MY_PROJECT\.cursor\rules" | Out-Null
-Copy-Item "AI Development\.cursor\command\ui-template\CO-STAR-UI-CREATOR\ui.md" "$MY_PROJECT\.cursor\command\"
-Copy-Item -Recurse "AI Development\.cursor\command\ui-template\CO-STAR-UI-CREATOR" "$MY_PROJECT\.cursor\rules\"
-```
+1. **Snatched the folder** — Grabs only that directory from GitHub (no full repo).
+2. **Placed it correctly** — Creates `.cursor/command` and `.cursor/rules` in **your project** and puts the files there.
+3. **Self-deleted** — Removes the temporary `Public-Github-Repo` folder so your workspace stays clean.
 
 ---
 
