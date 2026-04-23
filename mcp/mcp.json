@@ -1,0 +1,42 @@
+{
+  "mcpServers": {
+    "react-bits-mcp-docs": {
+      "url": "https://gitmcp.io/DavidHDev/react-bits"
+    },
+    "kokonutui-docs": {
+      "url": "https://gitmcp.io/kokonut-labs/kokonutui"
+    },
+    "untitled-ui-docs": {
+      "url": "https://gitmcp.io/untitleduico/react"
+    },
+    "cult-ui": {
+      "url": "https://gitmcp.io/nolly-studio/cult-ui"
+    },
+    "cursify Docs": {
+      "url": "https://gitmcp.io/ui-layouts/cursify"
+    },
+    "sileo Docs": {
+      "url": "https://gitmcp.io/hiaaryan/sileo"
+    },
+    "uilayouts Docs": {
+      "url": "https://gitmcp.io/ui-layouts/uilayouts"
+    },
+    "mantine Docs": {
+      "url": "https://gitmcp.io/mantinedev/mantine"
+    },
+    "ui-layouts-mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "@ui-layouts/mcp"
+      ]
+    },
+    "shadcn": {
+      "command": "npx",
+      "args": [
+        "shadcn@latest",
+        "mcp"
+      ]
+    }
+  }
+}
