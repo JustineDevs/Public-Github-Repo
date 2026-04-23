@@ -20,21 +20,36 @@
 | Webflow Made in Webflow | Futuristic design showcase and inspiration | [Visit](https://webflow.com/made-in-webflow/futuristic) |
 | Design Spells | Design inspiration and creative resources | [Visit](https://www.designspells.com/) |
 | Viewport UI | Web design components and patterns | [Visit](https://viewport-ui.design/categories/web/) |
-| Spline Community | 3D design community and resources | [Visit](https://community.spline.design/) |
 | Dark Design | Dark mode design inspiration and resources | [Visit](https://www.dark.design/) |
 | Shots | Design mockup and presentation tool | [Visit](https://shots.so/) |
 | Awwwards | Web design awards and inspiration | [Visit](https://www.awwwards.com/) |
 | Smooothy | Smooth design components and animations | [Visit](https://smooothy.vercel.app/) |
 | Browse Framer | Framer website showcase and inspiration | [Visit](https://browse.framer.website/) |
 | 3D Icons | Free 3D icon library and resources | [Visit](https://www.3dicons.com/) |
-| React Bits | React component library and snippets | [Visit](https://reactbits.dev/) |
 | Anime.js | JavaScript animation library | [Visit](https://animejs.com/) |
 | Framer University | Framer learning resources and tutorials | [Visit](https://framer.university/resources) |
 | UI Colors | Color palette generator and tools | [Visit](https://uicolors.app/generate/000223) |
-| Magic UI | Modern UI components and design system | [Visit](https://magicui.design/) |
-| 21st | Modern UI components and design resources | [Visit](https://21st.dev/home) |
 | Kimi | AI-powered chat and collaboration platform | [Visit](https://www.kimi.com/en/) |
 | ClipZap | AI-powered content creation and editing tool | [Visit](https://www.clipzap.ai/) |
+
+## Component Libraries & UI Kits
+
+| Tool | Description | Link |
+|------|-------------|------|
+| shadcn/ui | Copy-paste React components and patterns to own and extend | [Visit](https://ui.shadcn.com/) |
+| Cult UI | shadcn registry extension: animated components, blocks, and templates | [Visit](https://www.cult-ui.com/docs) |
+| UI Layouts | Copy-paste components, blocks, design tools, and MCP integration | [Visit](https://www.ui-layouts.com/) |
+| Cursify | Animated cursor and pointer components from UI Layouts | [Visit](https://cursify.ui-layouts.com/components) |
+| Aceternity UI | React and Next.js components with Tailwind CSS and Framer Motion | [Visit](https://ui.aceternity.com/components) |
+| Magic UI | Open-source animated React components aligned with shadcn/ui | [Visit](https://magicui.design/) |
+| React Bits | Animated UI components and patterns for React | [Visit](https://reactbits.dev/) |
+| Kokonut UI | shadcn CLI registry components and templates (Tailwind CSS v4) | [Visit](https://kokonutui.com/docs/cards/card-flip) |
+| Untitled UI React | Large open-source React component set (Tailwind CSS, React Aria) | [Visit](https://www.untitledui.com/react/components) |
+| Mantine | React component library with hooks, theming, and optional packages | [Visit](https://mantine.dev/getting-started/) |
+| Sileo | Gooey morph toast notifications with styling and autopilot controls | [Visit](https://sileo.aaryan.design/docs/styling) |
+| 21st.dev | Community-made UI components, shaders, and agent templates | [Visit](https://21st.dev/community/components) |
+| Spline Community | Discover, remix, and share 3D scenes built in Spline | [Visit](https://community.spline.design/) |
+| Unicorn Studio | No-code WebGL tool for interactive 3D and effects on the web | [Visit](https://www.unicorn.studio/) |
 
 ## Design Inspiration & Portfolios
 
