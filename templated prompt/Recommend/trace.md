@@ -2,7 +2,7 @@
 # Purpose: Map the actual data flow to find "unwired" logic or hardcoded mocks.
 
 - Act as a System Connectivity Auditor. 
-- TRACE: Start from [UI Component/Page] -> [Next.js API Route] -> [Runtime Module / Worker Path] -> [Store / Vendor Endpoint / Morph Contract].
+- TRACE: Start from [Component/Page] -> [API Route] -> [Runtime Module / Worker Path] -> [Store / Vendor Endpoint].
 - RULES:
     1. Identify any "MOCK", "TODO", or "STUB" in the path.
     2. Check whether operator auth, worker auth, correlation IDs, and vendor identifiers are correctly propagated or dropped.
